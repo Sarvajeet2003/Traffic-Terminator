@@ -338,6 +338,39 @@ def main():
         4. **Waiting Queue System**: Priority-based queue management for fair ride distribution
         5. **Driver Recommendations**: Personalized guidance for drivers to maximize earnings
         6. **Driver Experience Incentives**: Rewards based on app usage tenure and performance
+        7. **WhatsApp Integration**: Seamless booking and ride management through WhatsApp
+        """)
+        # Add WhatsApp feature explanation and images
+        st.markdown("<h2 class='sub-header'>WhatsApp Integration</h2>", unsafe_allow_html=True)
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.image("whatsapp_image1.png", caption="WhatsApp Booking Flow")
+            
+        with col2:
+            st.image("whatsapp_image2.png", caption="WhatsApp Welcome and Booking Process")
+        
+        st.markdown("""
+        ### Seamless Ride Booking via WhatsApp
+        
+        Our WhatsApp integration allows users to book and manage rides directly through WhatsApp, making the service accessible to everyone without requiring the installation of a separate app.
+        
+        #### Key Features:
+        
+        - **Conversational Booking**: Users can book rides through natural language conversations
+        - **Location Sharing**: Support for both text-based location input and WhatsApp's location sharing feature
+        - **Real-time Status Updates**: Receive booking confirmations and ride status updates via WhatsApp
+        - **Queue Management**: Join the waiting queue system directly through WhatsApp
+        - **Simple Commands**: Check ride status, cancel rides, or get help with simple text commands
+        
+        #### Benefits:
+        
+        - **Wider Accessibility**: Reaches users with limited data plans or older smartphones
+        - **Familiar Interface**: Uses a messaging platform that billions of people already know how to use
+        - **No App Required**: Eliminates the need to download, install, and update another app
+        - **Offline Capability**: Messages queue up when offline and send when connection is restored
+        - **Multi-language Support**: Easily adaptable to support multiple regional languages
         """)
         
         # Solution architecture

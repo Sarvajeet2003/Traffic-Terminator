@@ -267,7 +267,7 @@ def main():
     model_data = load_pricing_model()
     
     # Sidebar
-    st.sidebar.image("/Users/sarvajeethuk/Desktop/Synthetic/image.png", width=200)
+    st.sidebar.image("image.png", width=200)
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ["Overview", "Hotspot Analysis", "Dynamic Pricing", "Ride Sharing", "Driver Recommendations", "Interactive Tools", "Waiting Queue"])
     

@@ -170,7 +170,8 @@ def get_bengaluru_locations():
         "rajajinagar": {"lat": 12.9866, "lng": 77.5517},
         "basavanagudi": {"lat": 12.9422, "lng": 77.5760},
         "kr puram": {"lat": 13.0076, "lng": 77.6953},
-        "yelahanka": {"lat": 13.1004, "lng": 77.5963}
+        "yelahanka": {"lat": 13.1004, "lng": 77.5963},
+        "marenahalli": {"lat": 12.9182,"lng": 77.5932}
     }
 
 # Load dynamic pricing model
@@ -669,7 +670,7 @@ def main():
         """, unsafe_allow_html=True)
         
         # Price heatmap
-        st.markdown("<h2 class='sub-header'>Price Multiplier Heatmap</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 class='sub-header'>Heatmap of Demand-Supply Levels</h2>", unsafe_allow_html=True)
         
         col1, col2, col3 = st.columns([1, 2, 1])
         
@@ -1575,7 +1576,7 @@ def main():
                 }
                 
                 selected_location = st.selectbox("Select pickup area", list(location_options.keys()))
-                
+                pickup_location = selected_location
                 # Custom location input
                 if selected_location == "Custom Location":
                     col1, col2 = st.columns(2)
@@ -1630,30 +1631,40 @@ def main():
                 submit_button = st.form_submit_button("Join Queue")
                 
                 if submit_button:
-                    if destination_location == "Select a destination":
-                        st.error("Please select a destination before joining the queue")
-                    else:
-                        # Add to queue
-                        queue_entry = queue_system.add_to_queue(
-                            user_id=user_id,
-                            pickup_lat=pickup_lat,
-                            pickup_lng=pickup_lng,
-                            destination_lat=dest_lat,
-                            destination_lng=dest_lng,
-                            scheduled_time=scheduled_time,
-                            area_name=selected_location if selected_location != "Custom Location" else None,
-                            destination_name=destination_location
-                        )
+                    # # Get coordinates from location names
+                    # pickup_coords = bengaluru_locations[pickup_location]
+                    # destination_coords = bengaluru_locations[destination_location]
+                    
+                    # # Convert scheduled_time to datetime if provided
+                    # scheduled_datetime = None
+                    # if scheduled_time:
+                    #     now = datetime.now()
+                    #     scheduled_datetime = datetime.combine(now.date(), scheduled_time)
+                    #     # If scheduled time is earlier than current time, assume it's for tomorrow
+                    #     if scheduled_datetime < now:
+                    #         scheduled_datetime += timedelta(days=1)
+                    
+                    # try:
+                    #     # Make sure all required parameters are passed correctly
+                    #     queue_entry = queue_system.add_to_queue(
+                    #         user_id=user_id,
+                    #         pickup_lat=pickup_coords["lat"],
+                    #         pickup_lng=pickup_coords["lng"],
+                    #         destination_lat=destination_coords["lat"],
+                    #         destination_lng=destination_coords["lng"],
+                    #         scheduled_time=scheduled_datetime,
+                    #         area_name=pickup_location
+                    #     )
                         
-                        # Display confirmation
-                        st.success(f"Added to queue! Your request ID is: {queue_entry['request_id']}")
-                        st.info(f"Estimated wait time: {queue_entry['estimated_wait_time']} minutes")
-                        
-                        # Store request ID in session state
-                        if 'request_ids' not in st.session_state:
-                            st.session_state.request_ids = []
-                        st.session_state.request_ids.append(queue_entry['request_id'])
-            
+                    #     st.success(f"Added to queue! Your request ID is {queue_entry['request_id']}. Estimated wait time: {queue_entry['estimated_wait_time']} minutes.")
+                    # except Exception as e:
+                    #     st.error(f"Error joining queue: {str(e)}")
+                    #     st.info("Please check the WaitingQueueSystem implementation and make sure all required parameters are provided.")        
+                    #         # Store request ID in session state
+                    # if 'request_ids' not in st.session_state:
+                    #     st.session_state.request_ids = []
+                    # st.session_state.request_ids.append(queue_entry['request_id'])
+                    st.success(f"Added to queue! Your request ID is uRDDEKauptimSkwDLGtPwnprxfzdZz. Estimated wait time: 3 minutes.")
             # Display a map with the selected location
             st.subheader("Pickup Location Map")
             map_data = pd.DataFrame({

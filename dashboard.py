@@ -561,27 +561,27 @@ def main():
         fig.update_layout(height=400)
         st.plotly_chart(fig, use_container_width=True)
         
-        # Implementation timeline
-        st.markdown("<h3 class='sub-header'>Implementation Timeline</h3>", unsafe_allow_html=True)
+        # # Implementation timeline
+        # st.markdown("<h3 class='sub-header'>Implementation Timeline</h3>", unsafe_allow_html=True)
         
-        timeline_data = pd.DataFrame({
-            'Feature': ['WhatsApp Integration', 'Namma Yatri Plus', 'Loyalty Queue System', 'Driver Experience Incentives'],
-            'Development': [2, 1, 1, 1],
-            'Testing': [1, 1, 1, 1],
-            'Rollout': [1, 2, 2, 2]
-        })
+        # timeline_data = pd.DataFrame({
+        #     'Feature': ['WhatsApp Integration', 'Namma Yatri Plus', 'Loyalty Queue System', 'Driver Experience Incentives'],
+        #     'Development': [2, 1, 1, 1],
+        #     'Testing': [1, 1, 1, 1],
+        #     'Rollout': [1, 2, 2, 2]
+        # })
         
-        fig = px.timeline(
-            timeline_data, 
-            x_start='Development', 
-            x_end=timeline_data['Development'] + timeline_data['Testing'] + timeline_data['Rollout'],
-            y='Feature',
-            color='Feature',
-            title='Feature Implementation Timeline (Months)'
-        )
-        fig.update_yaxes(autorange="reversed")
-        fig.update_layout(height=300)
-        st.plotly_chart(fig, use_container_width=True)
+        # fig = px.timeline(
+        #     timeline_data, 
+        #     x_start='Development', 
+        #     x_end=timeline_data['Development'] + timeline_data['Testing'] + timeline_data['Rollout'],
+        #     y='Feature',
+        #     color='Feature',
+        #     title='Feature Implementation Timeline (Months)'
+        # )
+        # fig.update_yaxes(autorange="reversed")
+        # fig.update_layout(height=300)
+        # st.plotly_chart(fig, use_container_width=True)
     
     # Hotspot Analysis page
     elif page == "Hotspot Analysis":

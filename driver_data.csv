@@ -1,0 +1,501 @@
+driver_id,name,rating,experience_months,vehicle_type,preferred_areas,working_pattern,acceptance_rate,peak_hour_acceptance_rate,long_distance_acceptance_rate,cancellation_rate,avg_daily_earnings,avg_daily_trips,home_area,home_lat,home_lng,active_start_hour,active_end_hour,incentive_eligible,registration_date,languages
+D4392,Driver_0,4.59,26.9,Auto,,Weekend Only,62.3,47.98,38.88,9.42,871.66,5.5,Banashankari,12.916529,77.537612,10,19,True,2021-06-18,"Hindi, Tamil"
+D3303,Driver_1,4.58,21.0,Auto,,Full-time,83.19,62.78,68.78,18.21,1359.95,7.0,Banashankari,12.92699,77.547379,6,14,True,2021-12-10,"English, Hindi, Telugu"
+D8985,Driver_2,4.68,47.7,Premium Auto,"Banashankari, Domlur",Full-time,70.1,57.65,54.83,9.79,1434.64,7.9,Whitefield,12.975283,77.752986,6,16,True,2019-09-30,"Kannada, Telugu, Tamil"
+D3064,Driver_3,4.5,12.0,Auto,,Weekend Only,80.37,68.05,62.94,19.47,918.91,5.8,Sarjapur Road,12.913605,77.680898,9,18,True,2022-09-08,"Hindi, Kannada, Tamil"
+D9499,Driver_4,4.47,64.8,Auto,"Marathahalli, Hebbal, HSR Layout",Weekend Only,73.0,56.46,60.53,6.31,1129.39,6.0,Sarjapur Road,12.903653,77.68526,9,18,True,2018-05-06,English
+D9849,Driver_5,4.9,39.6,Premium Auto,"Marathahalli, Malleshwaram, Jayanagar",Weekday Only,49.86,38.46,33.56,4.69,911.6,4.6,Malleshwaram,12.999824,77.573323,8,18,True,2020-06-01,"English, Kannada, Hindi"
+D6307,Driver_6,4.78,45.1,Auto,,Part-time Morning,87.18,76.82,61.9,5.93,921.54,4.8,Sarjapur Road,12.912037,77.680478,6,11,True,2019-12-19,"Kannada, English, Telugu"
+D6534,Driver_7,4.55,13.1,Auto,,Part-time Morning,66.32,58.78,44.64,10.53,623.04,4.1,Koramangala,12.924208,77.612597,7,12,True,2022-08-06,"Kannada, Tamil, Telugu"
+D7999,Driver_8,5.0,16.2,Auto,Jayanagar,Part-time Morning,81.62,66.86,54.23,15.95,843.52,4.5,Hebbal,13.024225,77.602964,7,13,True,2022-05-05,"English, Hindi, Kannada"
+D1379,Driver_9,4.32,41.2,Auto,,Part-time Evening,87.06,66.16,55.87,20.17,852.83,4.9,Malleshwaram,12.994735,77.568097,17,23,True,2020-04-15,Tamil
+D1706,Driver_10,3.98,22.6,Auto,"Sarjapur Road, Indiranagar",Part-time Evening,79.15,62.31,62.72,6.96,903.59,5.4,Marathahalli,12.964073,77.694893,16,22,True,2021-10-24,"Hindi, English"
+D1132,Driver_11,4.06,19.5,Premium Auto,"Domlur, Rajajinagar, Hebbal",Part-time Evening,59.18,51.08,43.96,6.56,570.52,3.1,Hebbal,13.031391,77.599288,16,20,True,2022-01-26,"English, Hindi, Kannada"
+D7948,Driver_12,4.35,38.1,Auto,"Marathahalli, Sarjapur Road",Part-time Evening,84.74,61.8,66.71,10.22,790.56,4.6,Koramangala,12.945886,77.624524,17,22,True,2020-07-14,"Tamil, Kannada, Telugu"
+D8884,Driver_13,4.69,52.2,Auto,,Weekday Only,53.66,45.74,40.2,12.04,620.55,3.3,Banashankari,12.922075,77.545246,9,17,True,2019-05-19,"Tamil, English"
+D6884,Driver_14,4.75,19.9,Auto,Rajajinagar,Part-time Morning,98.4,81.85,77.21,10.74,680.25,4.3,Domlur,12.954941,77.638874,8,14,True,2022-01-12,English
+D9224,Driver_15,4.8,8.3,Auto,"BTM Layout, Banashankari, Malleshwaram",Part-time Morning,53.72,47.69,36.04,7.14,843.88,4.4,Malleshwaram,13.010132,77.571356,8,12,True,2022-12-25,Hindi
+D5810,Driver_16,4.85,37.7,Auto,"Koramangala, HSR Layout, Sarjapur Road",Part-time Evening,68.63,52.87,46.01,16.11,684.92,4.1,Hebbal,13.033539,77.597815,17,21,True,2020-07-26,Hindi
+D9508,Driver_17,5.0,6.4,Auto,,Part-time Morning,65.64,52.21,54.43,37.59,743.49,4.5,Rajajinagar,12.984838,77.560446,7,13,True,2023-02-20,"Telugu, Tamil"
+D5976,Driver_18,4.62,58.2,Premium Auto,"Electronic City, BTM Layout",Weekend Only,69.13,59.08,46.91,7.84,786.15,4.2,Banashankari,12.928034,77.545218,8,16,True,2018-11-19,"Hindi, Tamil, Kannada"
+D3121,Driver_19,4.62,27.1,Auto,"Koramangala, Bannerghatta Road, Electronic City",Full-time,50.46,39.51,35.21,4.89,1181.75,6.6,Domlur,12.9547,77.627812,9,19,True,2021-06-10,"Telugu, Tamil"
+D5020,Driver_20,4.6,6.7,Premium Auto,,Weekday Only,68.14,50.62,52.21,11.24,943.79,4.7,HSR Layout,12.920782,77.640315,8,15,True,2023-02-14,"Kannada, Hindi"
+D9132,Driver_21,4.24,12.7,Auto,,Part-time Morning,75.14,67.2,51.35,6.48,598.99,3.8,Basavanagudi,12.934108,77.576768,8,14,True,2022-08-16,Hindi
+D6496,Driver_22,4.32,13.8,Auto,,Part-time Morning,59.48,51.23,50.29,11.99,674.37,4.3,Bellandur,12.931493,77.668192,7,11,True,2022-07-15,Kannada
+D9327,Driver_23,4.58,29.7,Auto,,Full-time,83.95,63.76,64.86,14.05,1400.04,8.4,Domlur,12.966049,77.643522,6,16,True,2021-03-26,"English, Telugu, Tamil"
+D5925,Driver_24,4.79,46.7,Auto,Rajajinagar,Part-time Morning,81.67,58.05,54.99,14.01,595.77,3.4,Indiranagar,12.982899,77.64834,7,12,True,2019-11-01,"Hindi, Kannada"
+D9276,Driver_25,4.76,32.2,Auto,JP Nagar,Weekday Only,67.03,49.23,46.91,9.01,1018.57,5.5,Sarjapur Road,12.915049,77.693129,9,19,True,2021-01-09,Telugu
+D1181,Driver_26,4.81,14.3,Auto,,Part-time Morning,78.04,67.78,53.01,8.03,700.83,3.9,Koramangala,12.934318,77.625332,8,13,True,2022-06-29,"Telugu, Hindi, Kannada"
+D2952,Driver_27,4.65,13.2,Auto,Bellandur,Part-time Morning,82.05,73.53,69.08,3.0,771.64,4.4,Marathahalli,12.95817,77.69741,8,12,True,2022-08-02,"Hindi, Telugu, Kannada"
+D3539,Driver_28,4.62,12.9,Auto,Rajajinagar,Weekday Only,73.35,65.56,51.89,12.21,965.61,5.6,Bellandur,12.921321,77.669117,9,19,True,2022-08-12,English
+D5592,Driver_29,3.89,38.3,Auto,,Full-time,65.92,53.14,45.6,1.46,1329.21,7.2,Electronic City,12.844334,77.680487,9,19,True,2020-07-11,"Hindi, Telugu, Kannada"
+D5214,Driver_30,4.55,35.0,Auto,,Full-time,84.54,72.55,54.79,13.57,1124.71,6.5,Jayanagar,12.930808,77.59784,8,18,True,2020-10-16,"English, Kannada"
+D9885,Driver_31,4.3,16.6,Auto,,Weekend Only,87.4,62.6,57.35,8.68,1033.73,5.7,Jayanagar,12.936825,77.591289,11,20,True,2022-04-20,Hindi
+D6653,Driver_32,4.75,30.5,Auto,,Part-time Morning,69.84,62.82,50.59,9.69,801.33,5.3,Marathahalli,12.968916,77.705327,8,13,True,2021-03-02,Hindi
+D1232,Driver_33,5.0,4.9,Auto,"Bannerghatta Road, Marathahalli, Basavanagudi",Part-time Evening,54.96,47.56,43.61,20.54,642.64,3.7,Yelahanka,13.106821,77.595117,16,21,True,2023-04-08,"English, Telugu"
+D9010,Driver_34,4.38,45.4,Auto,,Part-time Evening,51.13,38.58,36.3,0.84,736.4,4.9,Domlur,12.964876,77.646118,16,20,True,2019-12-10,Tamil
+D4867,Driver_35,4.96,12.8,Auto,"Koramangala, Hebbal",Part-time Morning,93.01,66.82,65.62,25.27,772.94,4.5,Koramangala,12.938123,77.629782,7,11,True,2022-08-13,"English, Kannada, Telugu"
+D3746,Driver_36,4.42,7.2,Auto,,Weekday Only,85.42,68.0,57.53,5.26,1222.66,7.2,HSR Layout,12.912754,77.649483,9,16,True,2023-01-29,"Hindi, Tamil"
+D9822,Driver_37,4.24,64.0,Auto,"Koramangala, Indiranagar, Electronic City",Part-time Morning,79.13,60.65,59.17,13.34,764.28,4.8,Yelahanka,13.102747,77.593633,8,12,True,2018-05-31,English
+D8074,Driver_38,4.65,11.3,Auto,"Koramangala, Basavanagudi",Full-time,81.13,72.15,67.99,15.55,913.55,5.4,MG Road,12.976068,77.613113,8,18,True,2022-09-28,"Hindi, Telugu, Tamil"
+D4178,Driver_39,4.57,12.9,Auto,,Part-time Evening,55.73,46.04,47.13,26.76,774.35,4.1,Koramangala,12.941365,77.621015,17,23,True,2022-08-09,Telugu
+D1052,Driver_40,4.99,7.3,Auto,Banashankari,Full-time,81.84,72.36,58.65,8.86,1418.16,8.8,Koramangala,12.938933,77.631651,7,17,True,2023-01-26,Tamil
+D2170,Driver_41,4.55,16.7,Auto,,Part-time Morning,78.05,63.87,58.99,15.1,782.04,4.7,Hebbal,13.035032,77.595095,6,11,True,2022-04-20,"Telugu, Kannada"
+D1791,Driver_42,4.27,12.3,Auto,"Banashankari, MG Road",Weekend Only,81.83,58.74,50.93,45.57,1038.01,6.9,MG Road,12.974312,77.61683,8,15,True,2022-08-29,"Telugu, English"
+D3435,Driver_43,4.01,31.3,Auto,"MG Road, Malleshwaram, Hebbal",Part-time Morning,51.88,45.95,38.75,13.02,587.85,3.2,Rajajinagar,12.991553,77.545555,8,14,True,2021-02-04,"Kannada, Tamil"
+D4963,Driver_44,4.43,17.6,Auto,,Part-time Morning,88.55,64.36,73.18,23.64,744.05,5.0,Basavanagudi,12.940309,77.57674,6,10,True,2022-03-23,"Hindi, Kannada"
+D7936,Driver_45,4.8,18.6,Auto,"Rajajinagar, Basavanagudi, Domlur",Part-time Evening,79.81,65.0,63.76,12.07,687.47,4.5,Whitefield,12.977801,77.756853,17,23,True,2022-02-20,"Kannada, Hindi, Telugu"
+D6427,Driver_46,4.12,16.9,Auto,,Part-time Evening,61.13,43.32,49.83,4.84,561.3,3.6,Basavanagudi,12.940309,77.576201,15,19,True,2022-04-14,Tamil
+D2286,Driver_47,4.33,10.9,Premium Auto,,Full-time,78.4,64.3,48.33,12.17,996.66,5.2,Electronic City,12.84723,77.669464,9,17,True,2022-10-10,"English, Tamil, Hindi"
+D2405,Driver_48,4.64,7.5,Premium Auto,Electronic City,Weekday Only,78.09,58.61,60.63,16.11,875.15,5.1,Yelahanka,13.094511,77.593345,9,17,True,2023-01-20,English
+D6412,Driver_49,3.75,15.9,Auto,,Full-time,68.69,51.25,55.34,26.41,1157.7,6.0,Jayanagar,12.923255,77.589941,6,14,False,2022-05-14,"Hindi, English"
+D7670,Driver_50,4.49,36.3,Auto,"Koramangala, Marathahalli, Sarjapur Road",Full-time,82.03,62.36,50.35,9.84,1555.93,8.5,Bellandur,12.928813,77.663666,6,14,True,2020-09-08,"English, Kannada, Hindi"
+D2109,Driver_51,4.59,17.9,Auto,"Banashankari, BTM Layout, Malleshwaram",Part-time Morning,86.4,72.28,72.5,10.91,511.21,3.3,Electronic City,12.84087,77.682243,7,11,True,2022-03-15,"Hindi, Kannada, English"
+D6619,Driver_52,4.43,23.2,Premium Auto,Hebbal,Part-time Morning,67.56,56.13,52.95,5.01,606.7,3.7,Bellandur,12.920076,77.665463,6,11,True,2021-10-07,English
+D8208,Driver_53,4.22,53.6,Auto,"JP Nagar, Hebbal",Part-time Morning,69.59,58.28,45.12,8.27,722.37,4.6,Hebbal,13.044426,77.603299,6,12,True,2019-04-07,"Tamil, Hindi"
+D3942,Driver_54,4.67,14.6,Auto,Malleshwaram,Weekend Only,79.0,62.44,56.12,18.16,908.28,5.2,Jayanagar,12.929474,77.593895,11,17,True,2022-06-19,Telugu
+D3261,Driver_55,4.61,4.4,Auto,,Weekday Only,89.36,73.96,68.03,6.09,570.85,3.3,JP Nagar,12.902251,77.585842,8,17,True,2023-04-23,"Hindi, Kannada, Telugu"
+D8963,Driver_56,4.41,5.8,Auto,"Electronic City, MG Road, Marathahalli",Part-time Morning,86.55,73.27,71.16,51.15,654.01,3.6,Hebbal,13.02591,77.591161,6,11,False,2023-03-13,"English, Telugu"
+D4882,Driver_57,4.8,17.8,Premium Auto,,Part-time Evening,79.45,59.98,66.42,9.68,790.41,5.0,Marathahalli,12.951662,77.702259,17,22,True,2022-03-17,"English, Kannada"
+D3609,Driver_58,4.69,12.2,Auto,,Weekday Only,91.88,74.09,61.89,11.24,957.25,5.8,Sarjapur Road,12.915636,77.68716,8,17,True,2022-09-01,"Hindi, Telugu"
+D9848,Driver_59,4.17,9.3,Premium Auto,"Domlur, Rajajinagar",Weekday Only,87.49,70.81,69.58,58.26,1051.84,6.3,BTM Layout,12.922772,77.62023,7,16,True,2022-11-25,"Telugu, Tamil, English"
+D9464,Driver_60,4.64,6.7,Auto,Banashankari,Part-time Evening,57.01,48.41,44.54,1.72,839.36,5.0,Sarjapur Road,12.910602,77.6727,17,22,True,2023-02-13,"English, Hindi, Telugu"
+D2132,Driver_61,4.52,7.4,Auto,,Part-time Evening,90.16,65.83,64.31,25.07,806.64,4.1,Jayanagar,12.928885,77.593982,17,23,True,2023-01-23,"Hindi, Tamil"
+D9767,Driver_62,4.15,16.9,Auto,"Sarjapur Road, MG Road, Domlur",Full-time,75.96,64.35,59.91,9.14,851.0,4.3,Yelahanka,13.096747,77.596009,7,15,True,2022-04-11,"Hindi, Telugu"
+D4453,Driver_63,4.44,6.6,Premium Auto,"JP Nagar, HSR Layout, Hebbal",Weekday Only,94.77,67.54,65.04,2.21,1032.24,5.4,HSR Layout,12.912533,77.644101,8,16,True,2023-02-17,English
+D7556,Driver_64,4.48,25.6,Auto,"Hebbal, Whitefield, Bellandur",Weekend Only,63.34,44.99,52.92,1.22,1013.01,6.4,Hebbal,13.03086,77.599481,10,19,True,2021-07-25,"English, Tamil, Kannada"
+D8611,Driver_65,4.48,50.1,Auto,,Full-time,77.14,61.0,49.06,15.6,1465.32,9.1,MG Road,12.969402,77.615238,8,18,True,2019-07-21,"Kannada, Tamil"
+D7643,Driver_66,4.8,24.9,Auto,"Electronic City, Domlur, JP Nagar",Weekend Only,71.91,60.31,59.13,4.48,1024.64,6.8,BTM Layout,12.907595,77.613836,11,18,True,2021-08-15,"English, Hindi"
+D2953,Driver_67,4.55,74.7,Auto,Koramangala,Part-time Evening,77.83,66.49,61.93,2.79,659.26,3.8,Jayanagar,12.935783,77.59299,15,21,True,2017-07-13,"Hindi, English, Kannada"
+D6896,Driver_68,3.58,24.0,Auto,,Weekend Only,79.29,59.04,63.69,9.28,671.14,3.6,Marathahalli,12.960337,77.701137,9,16,False,2021-09-12,Hindi
+D3752,Driver_69,4.8,22.0,Premium Auto,"MG Road, BTM Layout",Weekend Only,73.2,51.5,62.06,16.25,1002.54,6.5,HSR Layout,12.914319,77.642278,10,18,True,2021-11-10,"English, Hindi, Kannada"
+D8987,Driver_70,4.18,12.0,Auto,,Weekday Only,58.24,43.6,36.94,7.1,1190.69,6.2,Indiranagar,12.98444,77.645496,9,17,True,2022-09-07,Kannada
+D8753,Driver_71,4.82,9.1,Auto,,Full-time,59.97,45.66,41.5,17.41,649.68,3.5,Domlur,12.967424,77.64422,8,19,True,2022-12-03,"Hindi, Telugu"
+D9556,Driver_72,4.55,18.0,Auto,"Malleshwaram, Marathahalli, Bellandur",Part-time Evening,68.24,58.3,44.78,34.75,613.54,3.2,Bellandur,12.93644,77.66784,15,20,True,2022-03-11,"Hindi, Tamil"
+D3303,Driver_73,4.68,8.4,Auto,"Koramangala, Yelahanka, HSR Layout",Full-time,80.96,66.54,49.11,11.67,1089.92,5.7,HSR Layout,12.914689,77.654445,8,19,True,2022-12-22,"Tamil, Telugu"
+D4865,Driver_74,4.33,40.0,Auto,Bannerghatta Road,Weekend Only,77.84,67.63,60.05,6.83,878.09,4.5,Electronic City,12.828748,77.669806,11,19,True,2020-05-20,"Hindi, English, Kannada"
+D5820,Driver_75,4.8,20.5,Auto,,Weekend Only,75.53,60.66,56.54,15.72,1355.21,7.4,Yelahanka,13.098529,77.594173,11,18,True,2021-12-25,"Telugu, Hindi, Tamil"
+D6400,Driver_76,4.11,4.9,Auto,,Weekday Only,72.38,60.5,56.6,39.37,772.33,4.6,Marathahalli,12.968369,77.686072,7,16,False,2023-04-08,"Hindi, Tamil, English"
+D5260,Driver_77,4.34,15.1,Auto,,Part-time Evening,73.87,61.68,56.25,4.97,655.55,3.5,Domlur,12.961442,77.638869,15,20,True,2022-06-05,"Hindi, Kannada"
+D5699,Driver_78,4.21,14.0,Auto,Sarjapur Road,Part-time Morning,71.83,62.89,49.7,21.98,606.85,3.2,Yelahanka,13.09666,77.587937,7,11,True,2022-07-10,"Tamil, English, Telugu"
+D3006,Driver_79,4.46,25.3,Auto,,Full-time,68.32,54.7,52.68,4.17,1220.08,6.9,Sarjapur Road,12.917583,77.691506,6,15,True,2021-08-03,Tamil
+D1791,Driver_80,4.31,8.6,Auto,Whitefield,Weekday Only,92.17,77.7,73.33,10.04,1116.36,6.6,Whitefield,12.970411,77.756604,8,18,True,2022-12-16,Telugu
+D8592,Driver_81,4.91,3.4,Auto,,Part-time Evening,81.89,69.59,52.83,9.04,975.37,5.2,Jayanagar,12.925433,77.599703,15,20,True,2023-05-22,Tamil
+D7616,Driver_82,4.41,20.8,Auto,Bellandur,Weekday Only,75.89,65.98,57.97,11.48,664.8,4.2,JP Nagar,12.910937,77.579328,8,17,True,2021-12-17,"Tamil, English, Hindi"
+D6857,Driver_83,4.36,23.1,Auto,"BTM Layout, Yelahanka",Weekday Only,97.12,81.72,74.23,7.06,1133.29,6.5,Bellandur,12.925163,77.659705,9,17,True,2021-10-08,"Telugu, English"
+D4272,Driver_84,4.52,29.9,Auto,,Part-time Morning,52.18,45.52,38.57,4.47,745.57,4.6,Rajajinagar,12.989059,77.552333,7,12,True,2021-03-17,"Telugu, Hindi, English"
+D1457,Driver_85,4.1,22.1,Auto,Koramangala,Part-time Evening,67.83,55.56,56.28,24.32,834.64,4.6,BTM Layout,12.912514,77.61383,17,22,True,2021-11-08,"English, Tamil"
+D8611,Driver_86,4.12,18.2,Auto,"Hebbal, Yelahanka, Bellandur",Part-time Evening,51.19,41.87,41.52,29.09,828.54,5.4,Domlur,12.957126,77.629422,15,19,True,2022-03-03,"Kannada, Hindi, Tamil"
+D1687,Driver_87,4.31,19.9,Auto,,Part-time Morning,86.79,75.23,70.77,19.25,576.51,2.9,Bannerghatta Road,12.897851,77.596496,8,14,True,2022-01-13,Kannada
+D5293,Driver_88,4.5,7.6,Premium Auto,"MG Road, Banashankari, Domlur",Weekday Only,89.6,73.66,75.75,16.37,934.36,4.7,Marathahalli,12.966693,77.706961,7,15,True,2023-01-17,"Kannada, Hindi"
+D9604,Driver_89,4.19,43.5,Auto,"Bellandur, Yelahanka, Indiranagar",Weekend Only,47.34,38.13,28.74,19.09,989.89,6.3,Bellandur,12.921614,77.668109,10,18,True,2020-02-05,Telugu
+D9661,Driver_90,4.58,35.3,Premium Auto,"Indiranagar, Malleshwaram, Jayanagar",Full-time,51.78,37.8,32.61,1.53,1402.95,8.4,MG Road,12.97644,77.612692,6,16,True,2020-10-06,Kannada
+D5714,Driver_91,4.55,13.5,Premium Auto,,Weekend Only,84.57,68.95,66.0,12.08,892.27,5.3,Rajajinagar,12.98933,77.551415,11,20,True,2022-07-23,"English, Kannada, Telugu"
+D5504,Driver_92,4.71,26.7,Auto,"Hebbal, Domlur, Rajajinagar",Full-time,80.35,62.87,61.24,4.25,1034.23,6.3,Sarjapur Road,12.907377,77.679983,6,14,True,2021-06-23,"English, Telugu, Hindi"
+D2110,Driver_93,4.33,33.3,Auto,Domlur,Weekday Only,89.72,75.53,74.43,19.89,686.93,4.1,Rajajinagar,12.987503,77.549788,8,16,True,2020-12-06,"Hindi, Telugu, Kannada"
+D7424,Driver_94,4.64,7.4,Auto,JP Nagar,Part-time Evening,85.47,67.37,69.72,28.71,504.67,2.8,Whitefield,12.971584,77.754151,17,22,True,2023-01-22,English
+D1732,Driver_95,4.16,24.3,Auto,,Part-time Evening,85.64,73.37,61.99,9.83,757.48,4.2,Jayanagar,12.94409,77.583049,15,19,True,2021-09-02,"Tamil, Hindi"
+D8249,Driver_96,4.15,13.1,Premium Auto,,Part-time Morning,57.02,47.28,48.1,23.84,709.9,3.7,Whitefield,12.967905,77.759018,7,13,True,2022-08-06,Telugu
+D4890,Driver_97,4.69,13.6,Premium Auto,,Weekend Only,78.46,62.89,62.16,28.5,949.24,5.0,JP Nagar,12.904491,77.590528,11,19,True,2022-07-21,"Hindi, English, Kannada"
+D7747,Driver_98,4.5,6.6,Premium Auto,"Sarjapur Road, Yelahanka",Weekend Only,45.54,40.51,34.04,8.34,1045.14,5.3,Hebbal,13.031304,77.600034,9,17,True,2023-02-14,Kannada
+D7804,Driver_99,4.68,44.7,Auto,"Hebbal, Banashankari, Basavanagudi",Part-time Evening,83.43,62.68,60.5,8.68,617.2,3.9,Electronic City,12.844748,77.68018,16,21,True,2019-12-30,Tamil
+D7149,Driver_100,4.62,13.2,Auto,,Part-time Morning,86.76,75.11,63.1,10.94,625.21,3.2,Rajajinagar,12.979022,77.552202,7,11,True,2022-08-01,"Tamil, Kannada"
+D3064,Driver_101,4.47,19.7,Premium Auto,,Weekend Only,56.5,45.0,44.48,12.83,858.2,5.4,Electronic City,12.836847,77.669985,8,15,True,2022-01-19,Kannada
+D5451,Driver_102,4.56,54.1,Auto,,Weekend Only,70.35,54.44,43.15,26.93,501.66,2.7,Malleshwaram,13.00099,77.56685,8,14,True,2019-03-23,"Hindi, Telugu"
+D7444,Driver_103,4.95,13.6,Premium Auto,,Part-time Morning,85.17,74.04,69.15,14.43,925.5,6.1,Banashankari,12.933227,77.551956,8,14,True,2022-07-22,"Kannada, Tamil, Telugu"
+D6143,Driver_104,4.43,5.1,Premium Auto,,Weekday Only,83.18,58.66,52.93,19.14,992.59,6.5,HSR Layout,12.907752,77.649711,7,16,False,2023-04-02,"Kannada, Hindi, Telugu"
+D4883,Driver_105,4.57,23.8,Auto,,Part-time Evening,81.43,70.39,55.81,10.52,570.56,3.3,Basavanagudi,12.941648,77.576757,15,20,True,2021-09-17,"Telugu, Tamil"
+D1591,Driver_106,4.44,20.2,Auto,Bannerghatta Road,Full-time,78.27,64.65,58.71,17.81,1085.51,6.9,Marathahalli,12.959204,77.692268,8,18,True,2022-01-05,English
+D7019,Driver_107,4.68,8.3,Auto,"Bannerghatta Road, Marathahalli",Weekday Only,92.21,77.01,71.56,20.96,786.07,4.1,Jayanagar,12.927779,77.593407,8,18,True,2022-12-27,Telugu
+D6345,Driver_108,4.7,23.2,Auto,Koramangala,Part-time Evening,88.4,74.84,73.58,55.29,573.17,3.0,Malleshwaram,12.995825,77.568254,15,21,True,2021-10-04,"Kannada, Hindi, Tamil"
+D3094,Driver_109,4.42,15.8,Auto,"Malleshwaram, Electronic City, Rajajinagar",Full-time,82.83,67.46,65.22,19.22,1017.55,5.3,Whitefield,12.959447,77.751699,9,18,True,2022-05-15,"Kannada, English"
+D4962,Driver_110,4.59,30.5,Auto,,Part-time Evening,59.48,47.41,48.61,2.09,635.91,3.3,Electronic City,12.835638,77.681758,15,19,True,2021-02-27,"English, Telugu, Kannada"
+D1753,Driver_111,4.11,13.1,Auto,,Part-time Evening,77.49,67.24,58.88,34.26,744.49,4.2,Bannerghatta Road,12.889472,77.600404,16,22,True,2022-08-03,"Kannada, English, Tamil"
+D6043,Driver_112,4.81,26.7,Premium Auto,"Basavanagudi, Domlur, Yelahanka",Weekday Only,51.33,39.14,41.98,3.66,772.38,4.2,Yelahanka,13.095372,77.59551,9,19,True,2021-06-21,"Hindi, Kannada, English"
+D4862,Driver_113,4.02,19.1,Auto,"Domlur, MG Road, Yelahanka",Full-time,84.97,61.95,61.15,41.28,1134.6,7.6,JP Nagar,12.903679,77.60251,6,16,True,2022-02-06,"Kannada, Hindi, Tamil"
+D4434,Driver_114,4.74,52.6,Premium Auto,,Weekday Only,50.46,44.02,42.18,15.42,876.98,5.2,Basavanagudi,12.933506,77.580645,7,17,True,2019-05-08,Kannada
+D5425,Driver_115,4.25,24.5,Auto,Marathahalli,Weekday Only,86.24,61.37,58.14,15.06,956.26,4.9,Malleshwaram,13.002264,77.564855,7,17,True,2021-08-26,Telugu
+D4852,Driver_116,4.55,33.1,Auto,Indiranagar,Full-time,68.67,58.99,54.92,10.29,1276.44,7.2,Bannerghatta Road,12.896782,77.600369,8,17,True,2020-12-13,"Tamil, Kannada"
+D8390,Driver_117,4.25,43.9,Auto,,Weekend Only,42.54,33.79,33.11,6.69,679.05,3.6,JP Nagar,12.905921,77.606366,11,18,True,2020-01-24,"English, Tamil, Hindi"
+D8536,Driver_118,4.47,25.7,Auto,"Whitefield, Bellandur, Indiranagar",Weekend Only,85.3,62.35,52.54,7.03,1155.96,5.8,Jayanagar,12.937845,77.585385,9,16,True,2021-07-24,"Tamil, Telugu"
+D5254,Driver_119,4.01,9.7,Auto,"Domlur, Marathahalli",Weekend Only,76.41,56.18,63.86,9.8,1276.04,7.4,Marathahalli,12.944593,77.698771,10,18,True,2022-11-14,English
+D2351,Driver_120,5.0,28.6,Auto,Whitefield,Weekend Only,81.96,70.46,54.7,7.28,820.82,5.2,Domlur,12.962175,77.644781,11,20,True,2021-04-27,"Hindi, Telugu"
+D4448,Driver_121,4.09,16.0,Auto,Banashankari,Part-time Evening,67.03,51.73,42.33,27.91,687.64,4.3,Yelahanka,13.097716,77.603483,16,20,True,2022-05-10,Telugu
+D4693,Driver_122,4.63,13.5,Auto,"Domlur, Indiranagar, Malleshwaram",Part-time Evening,62.81,45.12,38.35,15.91,627.27,4.2,BTM Layout,12.921524,77.60959,15,20,True,2022-07-24,Hindi
+D8041,Driver_123,4.47,20.9,Auto,"Hebbal, Banashankari",Full-time,55.88,42.11,46.35,7.03,1060.38,6.4,Hebbal,13.036402,77.58977,6,16,True,2021-12-15,"English, Kannada, Telugu"
+D4371,Driver_124,5.0,27.3,Auto,Bannerghatta Road,Part-time Morning,83.45,67.76,58.56,5.07,555.71,3.3,Basavanagudi,12.934971,77.5823,7,12,True,2021-06-04,"English, Hindi, Telugu"
+D9308,Driver_125,4.28,23.7,Premium Auto,,Part-time Evening,78.52,61.01,64.48,33.87,500.0,2.6,Banashankari,12.93204,77.546988,17,23,True,2021-09-20,Hindi
+D5139,Driver_126,4.59,10.1,Premium Auto,,Part-time Evening,82.87,73.64,60.56,41.41,534.33,3.0,Basavanagudi,12.948293,77.574156,16,22,True,2022-11-02,English
+D9299,Driver_127,4.43,24.3,Auto,BTM Layout,Part-time Evening,62.58,56.31,46.14,4.16,607.58,3.7,Jayanagar,12.933025,77.599324,16,22,True,2021-09-02,"Hindi, Tamil, Kannada"
+D4489,Driver_128,4.41,11.8,Auto,"Yelahanka, Whitefield, Hebbal",Weekend Only,91.97,77.8,71.35,8.2,784.56,4.8,Sarjapur Road,12.905353,77.683885,10,16,True,2022-09-12,"Telugu, Kannada, English"
+D1665,Driver_129,4.58,15.1,Auto,"Indiranagar, Rajajinagar",Full-time,89.63,68.53,61.8,10.68,996.73,5.4,Bannerghatta Road,12.894297,77.59625,6,14,True,2022-06-06,"Tamil, Telugu"
+D8196,Driver_130,4.24,20.8,Auto,,Full-time,93.89,68.07,73.92,13.22,1140.13,7.0,Basavanagudi,12.949302,77.581719,7,15,True,2021-12-15,"Hindi, English"
+D3275,Driver_131,4.1,8.8,Auto,,Weekday Only,92.57,75.3,61.54,13.91,1032.33,5.4,Basavanagudi,12.943827,77.575707,9,16,True,2022-12-10,"Hindi, Kannada"
+D5639,Driver_132,4.39,17.8,Auto,Whitefield,Weekend Only,78.63,68.66,61.08,6.89,1074.17,5.7,Hebbal,13.028324,77.607138,11,20,True,2022-03-16,Kannada
+D9416,Driver_133,4.26,3.2,Premium Auto,,Part-time Morning,81.16,66.46,61.21,20.9,705.52,3.7,Bannerghatta Road,12.88856,77.590707,7,11,False,2023-05-29,Telugu
+D4315,Driver_134,4.64,19.0,Auto,Yelahanka,Part-time Morning,73.96,53.98,61.53,44.9,764.27,4.6,Yelahanka,13.099256,77.599991,8,14,True,2022-02-10,"English, Kannada, Telugu"
+D3960,Driver_135,4.23,14.8,Auto,,Part-time Morning,91.89,65.36,64.12,7.08,656.11,3.7,Whitefield,12.975957,77.754574,6,11,True,2022-06-13,"Hindi, Telugu, English"
+D3364,Driver_136,4.15,6.7,Premium Auto,"Banashankari, Whitefield, Indiranagar",Full-time,48.8,38.0,33.46,5.79,1539.97,8.6,Hebbal,13.034837,77.589334,7,15,True,2023-02-12,"Hindi, English"
+D8474,Driver_137,4.94,21.1,Auto,,Weekday Only,76.41,56.01,51.45,14.42,816.8,4.3,Hebbal,13.037649,77.588095,9,16,True,2021-12-06,Tamil
+D1521,Driver_138,4.08,16.4,Auto,"HSR Layout, Jayanagar",Weekday Only,84.09,67.14,54.36,35.34,943.31,6.1,Jayanagar,12.936673,77.589161,7,14,True,2022-04-27,"English, Kannada"
+D9893,Driver_139,4.57,36.5,Auto,,Part-time Evening,77.39,61.39,47.19,30.17,806.44,4.3,JP Nagar,12.900956,77.588084,16,21,True,2020-09-01,"Hindi, Tamil"
+D8238,Driver_140,4.45,18.8,Auto,Domlur,Weekday Only,79.83,58.41,56.74,8.28,733.33,4.2,Rajajinagar,12.987924,77.543681,9,19,True,2022-02-13,"Kannada, Hindi"
+D2616,Driver_141,5.0,24.5,Premium Auto,"Yelahanka, Indiranagar",Weekend Only,75.48,54.37,59.11,2.53,565.34,3.6,Rajajinagar,12.985246,77.548753,8,14,True,2021-08-28,Hindi
+D1252,Driver_142,3.96,7.4,Auto,"Jayanagar, Electronic City",Full-time,70.33,55.02,49.92,8.87,1184.4,6.7,MG Road,12.985612,77.609985,9,18,False,2023-01-24,"English, Tamil, Telugu"
+D5350,Driver_143,4.24,12.7,Auto,"Whitefield, MG Road, Electronic City",Weekend Only,74.53,62.85,50.02,25.0,963.43,5.8,Indiranagar,12.974038,77.632449,11,19,True,2022-08-17,"Kannada, Tamil, Telugu"
+D3966,Driver_144,4.47,5.5,Auto,"Sarjapur Road, Koramangala, Indiranagar",Part-time Morning,97.34,82.33,62.52,36.08,1035.87,5.8,Hebbal,13.02591,77.601294,7,11,False,2023-03-20,"Telugu, Kannada, English"
+D1619,Driver_145,4.66,21.2,Auto,"Banashankari, Basavanagudi",Full-time,67.33,47.17,49.9,11.78,1018.35,6.0,BTM Layout,12.917547,77.605525,6,14,True,2021-12-03,"English, Hindi, Kannada"
+D5252,Driver_146,4.71,17.1,Auto,,Full-time,91.08,78.27,55.72,10.19,1021.48,5.5,BTM Layout,12.914658,77.606521,9,17,True,2022-04-07,"Tamil, English, Hindi"
+D3838,Driver_147,4.71,20.8,Auto,"Whitefield, Bellandur",Weekend Only,55.75,40.93,40.69,25.44,968.45,5.0,Hebbal,13.041263,77.59223,10,16,True,2021-12-18,Telugu
+D9723,Driver_148,4.43,33.5,Auto,,Weekend Only,82.39,64.46,53.08,4.32,835.73,4.9,Marathahalli,12.958356,77.701809,10,18,True,2020-11-30,"Hindi, English, Telugu"
+D6579,Driver_149,3.89,10.3,Auto,"Rajajinagar, Jayanagar, Basavanagudi",Part-time Evening,78.9,68.6,65.12,31.86,655.66,3.4,Whitefield,12.958183,77.747983,16,21,False,2022-10-27,"Telugu, Hindi, Kannada"
+D9838,Driver_150,4.56,12.2,Auto,Jayanagar,Part-time Evening,22.07,19.81,14.35,30.99,789.51,4.9,JP Nagar,12.906427,77.585838,15,20,True,2022-08-31,"Tamil, Hindi"
+D7359,Driver_151,4.53,22.8,Auto,"Koramangala, Malleshwaram, Electronic City",Weekend Only,89.4,64.3,63.3,23.55,731.69,4.3,Sarjapur Road,12.905006,77.695356,11,18,True,2021-10-16,Hindi
+D1184,Driver_152,4.85,9.5,Premium Auto,,Weekday Only,61.35,45.72,38.33,12.71,871.28,5.8,BTM Layout,12.918836,77.609731,7,16,True,2022-11-21,"Tamil, Kannada"
+D3273,Driver_153,4.22,57.9,Auto,"BTM Layout, Domlur, Marathahalli",Weekend Only,96.62,83.99,78.17,16.24,820.2,5.2,Whitefield,12.96721,77.750294,9,17,True,2018-11-28,Tamil
+D6134,Driver_154,5.0,23.2,Auto,Bannerghatta Road,Weekend Only,86.59,63.23,71.58,42.66,898.15,5.6,Electronic City,12.843675,77.675783,8,16,True,2021-10-05,"Hindi, English"
+D6220,Driver_155,4.49,32.0,Auto,Whitefield,Part-time Morning,61.27,45.23,41.39,3.84,500.0,2.6,Indiranagar,12.976998,77.642097,8,14,True,2021-01-16,"Tamil, Telugu"
+D9709,Driver_156,4.5,32.1,Auto,Domlur,Full-time,81.97,69.18,52.81,8.81,1275.87,6.9,Rajajinagar,12.996616,77.544156,7,15,True,2021-01-10,"Hindi, Telugu"
+D3177,Driver_157,4.42,4.8,Premium Auto,Rajajinagar,Part-time Morning,85.43,64.6,53.87,28.51,807.81,4.5,Basavanagudi,12.939881,77.568169,8,12,False,2023-04-11,"Kannada, Telugu, English"
+D4679,Driver_158,5.0,14.0,Auto,"Electronic City, Bannerghatta Road, Domlur",Part-time Morning,84.68,62.95,66.95,40.2,920.11,4.9,Indiranagar,12.980369,77.638601,6,10,True,2022-07-09,"Telugu, Hindi"
+D5056,Driver_159,4.8,7.7,Auto,"Electronic City, MG Road",Full-time,83.68,72.95,54.36,19.13,1048.92,6.0,Rajajinagar,12.980266,77.553729,9,17,True,2023-01-15,"Telugu, Kannada"
+D2184,Driver_160,4.33,36.4,Premium Auto,,Part-time Evening,89.98,71.03,72.73,21.13,610.99,3.7,Jayanagar,12.926266,77.582271,16,22,True,2020-09-04,Kannada
+D8804,Driver_161,4.32,15.6,Auto,,Full-time,96.43,78.88,58.03,6.69,1168.36,7.0,Whitefield,12.963143,77.752709,6,15,True,2022-05-22,English
+D5162,Driver_162,4.36,40.9,Auto,"BTM Layout, JP Nagar",Part-time Morning,36.64,30.83,23.98,10.55,601.67,3.1,Indiranagar,12.979405,77.644199,6,10,True,2020-04-23,"Telugu, Tamil, English"
+D4239,Driver_163,4.9,32.6,Auto,"Bellandur, BTM Layout, Hebbal",Part-time Evening,49.21,39.8,38.41,13.91,585.46,3.4,Rajajinagar,12.97533,77.542243,15,21,True,2020-12-27,"Telugu, Kannada"
+D2647,Driver_164,4.68,8.2,Auto,,Weekday Only,93.21,65.69,58.78,7.92,1119.08,6.0,Indiranagar,12.97946,77.635637,9,16,True,2022-12-31,"Kannada, Telugu"
+D6212,Driver_165,4.56,17.0,Premium Auto,,Part-time Evening,72.62,57.48,52.89,9.14,812.35,4.8,Hebbal,13.039977,77.595516,16,21,True,2022-04-10,"English, Kannada"
+D5597,Driver_166,4.22,13.8,Premium Auto,"Whitefield, Indiranagar, Banashankari",Weekend Only,91.06,66.65,64.24,29.42,897.47,4.5,Indiranagar,12.983115,77.63122,10,18,True,2022-07-14,"Hindi, English, Kannada"
+D8536,Driver_167,4.57,28.5,Auto,,Weekday Only,58.39,46.56,36.68,33.56,881.85,5.1,Jayanagar,12.935166,77.595339,7,16,True,2021-05-01,"Hindi, Kannada, Telugu"
+D1526,Driver_168,4.71,27.0,Auto,,Weekend Only,50.47,45.33,32.75,2.6,1014.48,5.5,Koramangala,12.940075,77.622523,10,19,True,2021-06-14,"Tamil, Kannada, English"
+D4700,Driver_169,4.75,17.9,Auto,"Bellandur, Basavanagudi, Whitefield",Weekday Only,93.42,74.59,74.39,34.89,995.27,6.0,Whitefield,12.967737,77.752196,9,19,True,2022-03-13,"Tamil, Hindi"
+D4080,Driver_170,4.69,6.8,Auto,"Bannerghatta Road, Jayanagar",Full-time,87.33,65.7,55.06,4.47,1436.28,9.1,Banashankari,12.926624,77.550958,6,16,True,2023-02-08,"Tamil, Hindi, English"
+D2498,Driver_171,4.66,10.2,Premium Auto,,Weekend Only,93.06,82.68,69.91,1.79,863.55,4.5,HSR Layout,12.917421,77.650298,8,15,True,2022-11-01,"Tamil, Telugu"
+D4672,Driver_172,4.19,30.1,Auto,"Rajajinagar, Whitefield",Full-time,92.96,79.52,70.13,8.62,1241.93,6.8,Hebbal,13.028091,77.596811,6,15,True,2021-03-13,Hindi
+D1680,Driver_173,4.74,12.2,Auto,Sarjapur Road,Weekend Only,60.92,48.28,41.19,10.46,1106.37,6.3,Whitefield,12.965733,77.756269,11,18,True,2022-09-01,"Telugu, Kannada"
+D7230,Driver_174,3.97,13.0,Auto,,Part-time Morning,91.08,66.46,77.33,14.51,658.58,3.8,Koramangala,12.92849,77.616521,6,11,True,2022-08-08,"Tamil, English, Kannada"
+D1110,Driver_175,4.68,27.1,Auto,,Part-time Evening,65.65,57.84,47.78,3.4,563.38,3.5,Banashankari,12.924052,77.550752,15,21,True,2021-06-11,"English, Telugu, Kannada"
+D6954,Driver_176,4.36,11.1,Auto,,Part-time Evening,65.19,55.33,54.88,29.06,714.21,4.4,BTM Layout,12.917461,77.609507,17,21,True,2022-10-04,Kannada
+D9217,Driver_177,4.81,14.8,Auto,,Full-time,58.68,48.16,40.43,23.95,1087.78,5.5,Sarjapur Road,12.914126,77.687185,9,19,True,2022-06-15,Telugu
+D5719,Driver_178,4.49,22.6,Premium Auto,,Weekday Only,49.84,41.98,40.82,13.3,562.2,3.3,Yelahanka,13.09933,77.598033,8,16,True,2021-10-22,"Telugu, Hindi, Tamil"
+D5921,Driver_179,5.0,15.8,Auto,,Weekend Only,77.42,62.1,48.51,11.44,1168.3,7.4,Yelahanka,13.09589,77.60143,10,18,True,2022-05-14,"Tamil, Kannada"
+D8920,Driver_180,4.39,63.7,Auto,Malleshwaram,Full-time,46.03,40.46,33.79,2.59,1188.8,6.1,Hebbal,13.040624,77.590514,8,17,True,2018-06-08,"English, Tamil"
+D7078,Driver_181,4.41,7.3,Premium Auto,,Part-time Morning,69.29,60.03,43.17,14.76,613.32,3.2,Malleshwaram,13.004707,77.572581,6,10,True,2023-01-25,"Hindi, English"
+D5789,Driver_182,4.4,21.6,Premium Auto,"BTM Layout, Basavanagudi",Part-time Evening,68.97,50.11,54.28,12.96,763.27,4.0,Basavanagudi,12.9439,77.579451,17,23,True,2021-11-22,"Telugu, English, Hindi"
+D8283,Driver_183,4.48,17.7,Auto,"Marathahalli, BTM Layout",Part-time Evening,62.84,49.88,53.17,11.01,500.0,3.2,MG Road,12.975701,77.605138,15,19,True,2022-03-20,"Tamil, English, Kannada"
+D1816,Driver_184,4.69,3.4,Premium Auto,"MG Road, HSR Layout, Marathahalli",Weekday Only,78.06,58.27,62.78,9.95,962.57,5.1,Jayanagar,12.927924,77.59517,9,19,True,2023-05-22,Hindi
+D2981,Driver_185,4.17,6.3,Auto,"JP Nagar, Rajajinagar",Full-time,57.94,41.06,36.57,18.37,1011.09,6.1,MG Road,12.978954,77.604062,7,18,True,2023-02-23,Kannada
+D1037,Driver_186,4.2,23.1,Auto,,Part-time Evening,56.42,50.45,37.07,2.85,663.38,3.7,MG Road,12.985348,77.616538,15,19,True,2021-10-08,Kannada
+D4973,Driver_187,4.4,12.0,Auto,,Weekend Only,78.22,70.08,57.89,13.64,987.96,5.7,MG Road,12.982373,77.598812,10,17,True,2022-09-07,"Hindi, Telugu"
+D4968,Driver_188,4.23,6.5,Auto,"BTM Layout, Sarjapur Road, Koramangala",Full-time,81.25,58.18,59.92,7.24,1300.39,7.5,Jayanagar,12.930455,77.596543,6,15,True,2023-02-19,"Kannada, Telugu"
+D3513,Driver_189,4.25,16.9,Premium Auto,,Part-time Evening,77.31,59.35,62.35,16.86,719.14,3.6,JP Nagar,12.914859,77.587453,17,23,True,2022-04-12,"Tamil, English, Kannada"
+D1867,Driver_190,4.84,11.6,Auto,,Full-time,35.25,29.87,28.61,10.78,1328.42,8.4,Marathahalli,12.956132,77.697801,6,17,True,2022-09-19,"Telugu, English, Kannada"
+D4173,Driver_191,4.33,50.2,Premium Auto,Malleshwaram,Part-time Morning,52.3,37.61,43.76,3.8,905.83,5.9,Basavanagudi,12.932747,77.567628,8,14,True,2019-07-20,"Telugu, Kannada"
+D4148,Driver_192,4.59,8.0,Auto,"Marathahalli, Electronic City, MG Road",Weekend Only,72.99,54.24,58.23,9.82,1039.88,6.4,Banashankari,12.921035,77.539867,9,16,True,2023-01-05,"Tamil, Telugu"
+D4147,Driver_193,4.61,25.7,Auto,Bellandur,Weekday Only,47.31,39.44,31.91,4.0,1109.29,5.7,Rajajinagar,12.987752,77.551766,8,17,True,2021-07-21,"Hindi, English"
+D7618,Driver_194,4.51,9.6,Auto,"Banashankari, Malleshwaram",Part-time Evening,99.38,74.64,60.75,16.32,585.5,3.1,Basavanagudi,12.939367,77.573253,15,19,True,2022-11-18,Kannada
+D2173,Driver_195,4.43,13.8,Auto,"Yelahanka, Marathahalli, Indiranagar",Weekday Only,73.94,65.84,62.11,19.11,1182.84,7.8,Bannerghatta Road,12.899966,77.595905,9,18,True,2022-07-14,"Hindi, Tamil, Telugu"
+D9258,Driver_196,4.47,21.8,Auto,"BTM Layout, Sarjapur Road, Electronic City",Full-time,89.4,80.06,67.63,14.82,1034.37,6.4,Electronic City,12.83488,77.691565,9,19,True,2021-11-17,Kannada
+D5768,Driver_197,4.52,18.0,Premium Auto,Banashankari,Part-time Evening,58.45,42.06,44.29,11.62,916.96,5.4,Bellandur,12.926513,77.666393,17,23,True,2022-03-12,English
+D7410,Driver_198,4.63,11.2,Auto,,Part-time Morning,70.73,60.42,42.62,17.77,706.77,3.9,Yelahanka,13.103408,77.592706,7,11,True,2022-10-01,"English, Telugu, Tamil"
+D5399,Driver_199,4.76,18.1,Premium Auto,Basavanagudi,Weekend Only,88.34,79.04,58.75,5.44,726.95,3.7,Rajajinagar,12.988959,77.544668,11,17,True,2022-03-08,"Telugu, Hindi"
+D2031,Driver_200,4.67,20.9,Auto,"Bannerghatta Road, MG Road",Full-time,76.12,60.6,56.48,9.53,1532.33,7.9,Sarjapur Road,12.91162,77.680915,9,19,True,2021-12-15,"Kannada, Hindi"
+D7555,Driver_201,4.6,19.5,Premium Auto,Rajajinagar,Full-time,83.98,68.07,57.9,0.76,1143.59,5.9,Jayanagar,12.925614,77.581622,6,14,True,2022-01-24,"Tamil, Hindi"
+D8369,Driver_202,5.0,59.5,Auto,Banashankari,Weekend Only,79.47,64.37,65.25,5.13,721.57,3.7,Bellandur,12.925381,77.664327,9,15,True,2018-10-14,Telugu
+D6329,Driver_203,4.19,34.4,Premium Auto,,Part-time Evening,97.6,70.59,79.5,11.75,775.92,4.3,Marathahalli,12.956955,77.698576,16,21,True,2020-11-02,"English, Kannada"
+D7277,Driver_204,4.24,23.0,Auto,,Weekend Only,96.95,76.82,75.41,10.55,809.51,4.3,Yelahanka,13.10068,77.59374,8,15,True,2021-10-11,"English, Tamil"
+D2444,Driver_205,4.53,33.8,Premium Auto,,Weekday Only,70.08,51.5,45.94,28.94,586.28,3.5,Malleshwaram,13.014797,77.574719,8,15,True,2020-11-23,Telugu
+D3001,Driver_206,3.96,20.9,Auto,Bellandur,Full-time,88.7,65.35,67.16,14.53,1380.09,7.1,Malleshwaram,13.004146,77.57028,8,18,True,2021-12-14,"Hindi, Telugu, Tamil"
+D1097,Driver_207,4.78,11.3,Premium Auto,"Hebbal, Sarjapur Road, Domlur",Weekday Only,92.15,82.55,70.79,40.4,1091.03,5.6,MG Road,12.978964,77.613664,7,14,True,2022-09-29,"Telugu, English, Tamil"
+D8323,Driver_208,4.62,34.2,Auto,"Rajajinagar, HSR Layout, BTM Layout",Part-time Evening,55.09,44.46,36.46,18.17,583.33,3.5,Electronic City,12.848922,77.683714,17,22,True,2020-11-11,Telugu
+D6387,Driver_209,4.35,34.0,Auto,"Marathahalli, Bellandur",Part-time Evening,46.49,40.81,28.9,3.9,893.13,4.6,JP Nagar,12.903714,77.595861,17,22,True,2020-11-15,Kannada
+D6040,Driver_210,4.62,28.3,Auto,"Hebbal, BTM Layout",Full-time,71.66,64.44,53.08,7.61,1076.35,5.8,Bellandur,12.926208,77.661636,7,18,True,2021-05-06,Tamil
+D1321,Driver_211,4.55,36.3,Auto,"Marathahalli, Domlur, Indiranagar",Full-time,73.74,56.32,47.62,15.93,1510.49,7.7,Koramangala,12.937926,77.622391,6,17,True,2020-09-07,"Tamil, Kannada, English"
+D9732,Driver_212,3.94,42.1,Auto,,Weekend Only,86.98,75.31,68.23,6.48,888.26,5.3,Bannerghatta Road,12.901612,77.607153,11,18,True,2020-03-18,English
+D2396,Driver_213,4.73,10.1,Auto,"Yelahanka, Whitefield, MG Road",Weekend Only,54.98,48.51,43.98,15.24,885.23,5.4,Banashankari,12.928998,77.550658,8,14,True,2022-11-03,"Kannada, Hindi"
+D3691,Driver_214,3.9,12.3,Premium Auto,"Domlur, Whitefield",Weekend Only,71.58,54.7,60.44,8.63,836.37,4.8,Hebbal,13.03762,77.594126,11,17,True,2022-08-28,"Telugu, English, Tamil"
+D4624,Driver_215,4.17,21.7,Auto,HSR Layout,Full-time,54.16,44.98,32.58,12.28,978.41,5.1,MG Road,12.968646,77.599713,9,19,True,2021-11-21,"Telugu, English"
+D3061,Driver_216,5.0,8.3,Premium Auto,"Domlur, Bannerghatta Road",Weekday Only,70.97,63.68,57.89,18.77,733.84,4.1,Banashankari,12.917931,77.5537,9,19,True,2022-12-26,"Kannada, Telugu"
+D6143,Driver_217,4.46,2.2,Auto,Yelahanka,Full-time,95.33,67.5,59.49,17.49,1187.75,6.5,Rajajinagar,12.988905,77.556002,6,16,False,2023-06-28,"Hindi, Kannada"
+D2834,Driver_218,4.69,1.4,Premium Auto,,Part-time Evening,92.8,76.96,57.14,33.52,762.35,4.8,Indiranagar,12.978265,77.633153,15,21,False,2023-07-21,"Hindi, Tamil, Kannada"
+D7882,Driver_219,4.35,10.5,Premium Auto,,Weekday Only,74.36,59.6,59.23,39.47,1319.41,7.4,Whitefield,12.968976,77.753221,8,15,True,2022-10-21,"Telugu, Hindi"
+D4375,Driver_220,5.0,2.4,Auto,,Part-time Morning,55.21,43.05,44.96,19.43,500.0,3.3,BTM Layout,12.915543,77.603096,8,13,False,2023-06-23,"English, Tamil"
+D2793,Driver_221,4.78,30.4,Premium Auto,"Banashankari, Sarjapur Road, BTM Layout",Weekend Only,77.35,56.36,58.03,4.8,904.38,5.9,HSR Layout,12.919528,77.639914,11,20,True,2021-03-03,"Hindi, English"
+D7363,Driver_222,4.35,10.5,Auto,,Part-time Evening,70.26,50.21,56.48,47.14,658.45,3.7,Hebbal,13.030619,77.59942,15,20,True,2022-10-23,Telugu
+D2906,Driver_223,4.8,0.8,Auto,,Weekday Only,77.62,63.84,62.9,36.85,966.61,6.3,Koramangala,12.933073,77.6228,7,14,False,2023-08-09,"Telugu, Tamil"
+D2263,Driver_224,4.78,6.0,Auto,"Jayanagar, Electronic City, Marathahalli",Full-time,89.67,76.33,64.08,39.42,1390.42,8.5,Indiranagar,12.970804,77.641799,9,19,True,2023-03-06,English
+D6382,Driver_225,4.23,24.9,Auto,Hebbal,Weekday Only,64.52,50.17,49.69,5.62,799.1,4.7,Malleshwaram,13.003074,77.576799,8,15,True,2021-08-16,"Hindi, Tamil, Telugu"
+D7090,Driver_226,4.36,25.2,Auto,,Weekend Only,95.2,85.03,79.72,6.95,648.76,4.3,JP Nagar,12.918869,77.590436,8,14,True,2021-08-05,"Tamil, English"
+D8816,Driver_227,4.59,8.1,Auto,,Weekday Only,75.99,65.26,58.92,31.93,855.51,4.7,Koramangala,12.926797,77.626593,7,16,True,2023-01-02,"Tamil, Hindi, English"
+D1458,Driver_228,4.1,6.9,Auto,,Part-time Morning,87.74,71.15,54.04,6.8,870.16,5.8,JP Nagar,12.905883,77.582472,8,12,True,2023-02-06,Telugu
+D9904,Driver_229,4.49,60.2,Auto,Malleshwaram,Part-time Morning,71.33,57.91,47.99,16.43,706.13,4.1,Bellandur,12.923594,77.667991,7,13,True,2018-09-23,"Kannada, Hindi, Tamil"
+D8997,Driver_230,4.66,34.0,Auto,"HSR Layout, Indiranagar",Part-time Morning,83.49,69.85,59.58,8.68,780.33,4.4,Bellandur,12.930936,77.667886,6,10,True,2020-11-14,"Tamil, English"
+D1296,Driver_231,4.89,31.4,Auto,"MG Road, BTM Layout, Bellandur",Part-time Morning,87.76,70.0,64.99,5.17,900.16,5.3,Bannerghatta Road,12.903026,77.598853,7,11,True,2021-02-01,"Telugu, Tamil"
+D3025,Driver_232,4.45,11.0,Auto,,Weekday Only,80.91,60.97,56.37,24.62,597.56,3.9,Whitefield,12.964977,77.749072,7,16,True,2022-10-08,English
+D7343,Driver_233,4.36,5.2,Auto,"Malleshwaram, Jayanagar, MG Road",Full-time,89.77,75.82,71.76,26.2,1045.29,6.2,Bannerghatta Road,12.894765,77.598269,7,16,False,2023-03-29,"English, Telugu"
+D9797,Driver_234,4.65,42.2,Premium Auto,"Bellandur, Jayanagar",Weekend Only,89.1,73.43,67.99,6.0,969.9,5.7,Koramangala,12.926659,77.628567,11,17,True,2020-03-16,"Hindi, English, Tamil"
+D2325,Driver_235,4.2,7.8,Auto,"Indiranagar, HSR Layout",Full-time,66.54,47.76,43.8,14.19,1094.9,5.8,Marathahalli,12.961303,77.695869,8,19,True,2023-01-09,"Hindi, Kannada, Telugu"
+D3450,Driver_236,4.96,11.2,Auto,Marathahalli,Part-time Evening,77.98,60.05,62.83,12.42,748.89,4.3,Domlur,12.965435,77.639025,15,21,True,2022-10-02,"English, Kannada"
+D9984,Driver_237,4.49,14.3,Auto,,Part-time Morning,80.54,64.63,62.23,16.2,709.06,3.9,Jayanagar,12.920172,77.594927,7,11,True,2022-06-30,English
+D1078,Driver_238,4.8,11.1,Auto,Indiranagar,Weekday Only,59.4,42.85,37.04,1.84,830.6,4.2,Rajajinagar,12.983533,77.550788,8,17,True,2022-10-04,"Telugu, Hindi, Kannada"
+D7218,Driver_239,4.06,31.9,Premium Auto,,Weekend Only,74.62,62.41,59.57,9.91,947.02,6.0,Basavanagudi,12.944035,77.576385,11,20,True,2021-01-16,"Tamil, English"
+D8753,Driver_240,4.52,13.1,Auto,Bannerghatta Road,Weekend Only,82.23,64.25,51.91,12.7,1116.85,7.0,Basavanagudi,12.933901,77.568963,9,16,True,2022-08-04,"Tamil, Kannada, Hindi"
+D1432,Driver_241,4.99,21.1,Auto,"HSR Layout, Banashankari, Bannerghatta Road",Part-time Evening,86.48,61.86,61.33,12.24,767.24,4.5,Indiranagar,12.968852,77.635742,17,23,True,2021-12-09,"Telugu, Kannada, English"
+D7126,Driver_242,4.7,9.9,Auto,,Weekday Only,91.83,81.61,77.91,45.78,924.83,5.0,Whitefield,12.975935,77.752981,9,18,True,2022-11-07,"Tamil, Hindi, Telugu"
+D5109,Driver_243,4.38,5.2,Auto,Whitefield,Part-time Morning,81.3,61.48,60.15,25.95,592.44,3.1,Sarjapur Road,12.914426,77.683579,6,10,False,2023-03-29,English
+D8879,Driver_244,4.36,4.4,Auto,"Marathahalli, Sarjapur Road, Yelahanka",Weekend Only,83.37,63.49,67.35,7.32,746.59,4.5,Bellandur,12.930463,77.668724,11,20,False,2023-04-21,"English, Telugu"
+D3630,Driver_245,4.65,14.6,Premium Auto,,Weekday Only,92.06,80.13,59.36,9.91,1137.6,7.2,HSR Layout,12.915543,77.644095,7,17,True,2022-06-20,"Tamil, Telugu"
+D8117,Driver_246,4.28,9.9,Auto,"Indiranagar, Banashankari",Weekend Only,79.93,61.74,49.04,4.76,724.51,4.8,Bellandur,12.926993,77.664554,8,14,True,2022-11-07,"English, Kannada, Tamil"
+D4849,Driver_247,4.45,3.8,Auto,"Yelahanka, Koramangala, BTM Layout",Part-time Evening,84.29,60.62,60.83,15.24,683.67,4.2,Sarjapur Road,12.903489,77.686309,15,20,False,2023-05-10,Tamil
+D7069,Driver_248,4.92,24.3,Auto,"Electronic City, Yelahanka, Indiranagar",Weekday Only,82.52,64.26,67.34,5.42,850.29,4.7,Jayanagar,12.923358,77.59643,7,17,True,2021-09-03,Tamil
+D8194,Driver_249,4.89,23.5,Auto,Indiranagar,Part-time Evening,82.04,57.75,66.82,10.88,778.39,4.4,Hebbal,13.028575,77.592302,16,22,True,2021-09-28,Tamil
+D3540,Driver_250,4.26,14.2,Auto,"HSR Layout, Malleshwaram",Weekend Only,88.57,66.79,61.7,29.11,839.95,5.1,HSR Layout,12.911382,77.654702,9,18,True,2022-07-04,"Hindi, Kannada"
+D1006,Driver_251,4.83,53.9,Auto,,Part-time Evening,82.2,57.91,63.1,24.24,603.48,3.5,Rajajinagar,12.996087,77.552167,17,23,True,2019-03-31,"Telugu, Tamil"
+D1912,Driver_252,4.7,14.8,Auto,,Full-time,78.11,62.27,58.4,6.49,1461.42,9.4,Indiranagar,12.978206,77.64295,7,16,True,2022-06-14,"Kannada, Tamil"
+D2302,Driver_253,4.56,13.1,Auto,"Domlur, Bellandur",Part-time Evening,78.72,58.23,48.29,4.87,834.89,5.0,Domlur,12.961446,77.641523,16,20,True,2022-08-05,"Hindi, Telugu, Kannada"
+D3081,Driver_254,4.67,71.2,Auto,"Jayanagar, Koramangala",Part-time Morning,40.1,33.54,31.72,4.55,846.01,4.6,Yelahanka,13.101629,77.594397,7,13,True,2017-10-25,"Hindi, Kannada, English"
+D6552,Driver_255,4.07,11.9,Auto,"Basavanagudi, Yelahanka",Part-time Evening,78.65,69.1,57.97,3.31,700.96,3.9,Jayanagar,12.930663,77.579431,17,23,True,2022-09-10,"Hindi, Tamil, Telugu"
+D9224,Driver_256,4.65,24.6,Auto,"Koramangala, Malleshwaram",Weekend Only,49.29,37.58,37.56,14.96,957.99,5.9,Whitefield,12.964224,77.761693,9,18,True,2021-08-25,English
+D4618,Driver_257,4.68,22.4,Auto,"Koramangala, MG Road",Part-time Morning,50.19,40.73,33.41,23.12,522.11,3.1,Whitefield,12.982065,77.741446,6,10,True,2021-10-31,"Telugu, Tamil"
+D2221,Driver_258,4.43,19.3,Premium Auto,"JP Nagar, Banashankari, Whitefield",Weekday Only,84.41,62.18,71.36,20.26,911.63,4.9,Basavanagudi,12.939053,77.569821,7,15,True,2022-01-31,"Telugu, Kannada, Hindi"
+D6185,Driver_259,4.36,12.4,Premium Auto,"Domlur, HSR Layout, Rajajinagar",Weekday Only,66.14,58.57,39.78,14.33,500.0,2.7,Hebbal,13.036455,77.605861,9,19,True,2022-08-26,"English, Telugu"
+D3230,Driver_260,4.38,23.2,Auto,,Weekend Only,92.37,74.34,67.82,20.04,758.12,4.0,Hebbal,13.033153,77.5899,9,17,True,2021-10-04,Hindi
+D2046,Driver_261,4.74,13.7,Auto,"Electronic City, Malleshwaram, Banashankari",Part-time Evening,85.02,67.76,60.5,0.52,564.41,3.5,HSR Layout,12.909507,77.647746,17,21,True,2022-07-17,"Kannada, Telugu"
+D9704,Driver_262,3.98,11.1,Auto,"Bellandur, Banashankari",Weekday Only,78.22,59.64,55.45,7.4,1083.45,6.6,Electronic City,12.833159,77.681967,7,16,False,2022-10-04,"Telugu, Hindi, Kannada"
+D1030,Driver_263,4.28,18.6,Auto,"Rajajinagar, Domlur, Yelahanka",Part-time Evening,54.31,44.93,35.56,1.69,500.0,3.1,Jayanagar,12.92855,77.58664,15,21,True,2022-02-22,Hindi
+D8814,Driver_264,4.18,14.3,Auto,"Yelahanka, Whitefield",Part-time Evening,84.44,66.86,64.09,14.1,610.13,3.2,Yelahanka,13.102806,77.598769,15,21,True,2022-06-29,"Kannada, Telugu, Tamil"
+D8496,Driver_265,4.61,6.9,Auto,"Whitefield, JP Nagar, Bannerghatta Road",Weekday Only,87.6,71.28,65.85,13.29,696.63,3.6,Electronic City,12.843481,77.669256,7,14,True,2023-02-08,English
+D3601,Driver_266,4.38,34.5,Auto,,Part-time Evening,62.57,54.9,41.93,12.29,500.0,2.6,Jayanagar,12.925858,77.602472,16,20,True,2020-11-01,Telugu
+D6969,Driver_267,4.35,25.3,Auto,Bannerghatta Road,Part-time Evening,84.1,63.53,55.12,3.45,835.2,5.4,BTM Layout,12.912208,77.607779,15,21,True,2021-08-03,"Hindi, Kannada"
+D5350,Driver_268,4.74,10.5,Premium Auto,Marathahalli,Weekday Only,71.23,53.05,57.76,10.96,1012.94,5.2,Jayanagar,12.930546,77.590779,8,17,True,2022-10-21,"English, Tamil"
+D3259,Driver_269,4.59,4.3,Auto,"BTM Layout, Bellandur, Sarjapur Road",Weekend Only,86.43,67.17,73.37,21.16,977.87,5.7,Electronic City,12.834369,77.681493,10,16,True,2023-04-26,"Tamil, Telugu"
+D3947,Driver_270,4.41,39.1,Auto,"Indiranagar, Rajajinagar",Part-time Morning,68.79,49.77,49.87,9.54,540.93,3.0,HSR Layout,12.908302,77.656299,6,11,True,2020-06-16,Tamil
+D5580,Driver_271,4.47,20.6,Auto,"Bannerghatta Road, Sarjapur Road",Weekend Only,65.43,46.46,44.94,39.98,746.75,4.9,Bannerghatta Road,12.885597,77.600222,10,16,True,2021-12-22,"English, Hindi, Telugu"
+D6373,Driver_272,4.27,17.7,Auto,,Part-time Morning,87.94,65.23,66.76,14.6,711.3,4.0,Bannerghatta Road,12.898926,77.604843,6,10,True,2022-03-19,English
+D6593,Driver_273,4.23,43.5,Auto,,Weekend Only,59.36,50.86,49.68,8.55,662.62,4.0,Rajajinagar,12.985512,77.549382,11,17,True,2020-02-06,"English, Hindi"
+D2460,Driver_274,4.76,28.3,Auto,,Part-time Morning,84.45,60.42,59.06,29.22,583.3,3.1,Basavanagudi,12.937899,77.578521,6,12,True,2021-05-05,English
+D1857,Driver_275,4.47,20.0,Auto,JP Nagar,Part-time Evening,75.96,64.35,64.29,21.34,691.59,4.0,JP Nagar,12.903806,77.589363,15,19,True,2022-01-09,Hindi
+D4449,Driver_276,4.5,13.7,Auto,"Marathahalli, Rajajinagar, Jayanagar",Part-time Evening,92.95,71.3,70.6,52.54,770.76,5.0,Bellandur,12.921504,77.666337,15,20,True,2022-07-16,"English, Tamil, Hindi"
+D5652,Driver_277,4.57,6.9,Auto,,Weekend Only,86.06,68.92,70.05,11.9,888.45,4.7,Koramangala,12.947386,77.616332,11,17,True,2023-02-07,"Kannada, English, Hindi"
+D3825,Driver_278,4.01,7.5,Auto,,Weekend Only,68.21,51.4,57.04,10.11,731.76,4.5,Bannerghatta Road,12.889117,77.606786,9,16,True,2023-01-19,"Kannada, Tamil, Telugu"
+D7701,Driver_279,4.62,22.6,Auto,,Full-time,66.9,46.97,42.82,25.59,1066.62,6.9,Hebbal,13.033541,77.594436,7,16,True,2021-10-24,"Telugu, Tamil"
+D6234,Driver_280,4.52,21.9,Auto,"Bellandur, Sarjapur Road",Full-time,81.17,58.69,50.39,10.59,942.91,5.1,Bellandur,12.928133,77.665012,9,18,True,2021-11-13,"English, Kannada, Hindi"
+D1932,Driver_281,3.91,6.1,Auto,,Weekend Only,70.31,55.25,59.08,14.04,998.75,5.1,BTM Layout,12.924079,77.616468,11,20,False,2023-03-04,English
+D1126,Driver_282,4.55,10.0,Auto,Yelahanka,Weekend Only,67.85,48.84,41.21,34.34,585.86,3.0,Marathahalli,12.960726,77.686402,11,19,True,2022-11-06,"Telugu, Hindi, Kannada"
+D3664,Driver_283,4.79,15.7,Auto,Hebbal,Full-time,91.89,79.57,71.14,2.93,1550.21,9.0,BTM Layout,12.923097,77.607528,7,16,True,2022-05-20,Kannada
+D6367,Driver_284,4.46,11.1,Auto,BTM Layout,Part-time Morning,78.57,57.44,53.75,25.84,706.1,3.8,Bannerghatta Road,12.895179,77.593428,7,11,True,2022-10-03,"English, Tamil, Telugu"
+D9947,Driver_285,4.22,22.9,Auto,Domlur,Weekend Only,82.67,69.72,64.77,2.94,1231.31,8.2,Marathahalli,12.956106,77.700073,8,14,True,2021-10-14,"English, Hindi, Kannada"
+D7636,Driver_286,4.32,12.1,Auto,"Hebbal, JP Nagar",Weekday Only,88.87,64.82,71.85,45.67,1116.08,6.5,Hebbal,13.037058,77.598868,9,18,True,2022-09-05,Hindi
+D6790,Driver_287,4.42,65.8,Auto,"Whitefield, Banashankari",Part-time Evening,79.0,66.06,51.63,18.95,820.15,4.9,Basavanagudi,12.941196,77.574422,16,21,True,2018-04-07,"Kannada, Tamil, Telugu"
+D3785,Driver_288,4.17,13.9,Auto,"HSR Layout, Yelahanka, Hebbal",Weekend Only,89.82,66.82,54.69,15.91,1130.44,6.9,Banashankari,12.919911,77.541325,10,17,True,2022-07-13,"English, Hindi"
+D5691,Driver_289,4.72,6.6,Auto,Marathahalli,Part-time Evening,90.13,65.44,57.5,20.25,897.49,5.1,Sarjapur Road,12.912054,77.692016,16,22,True,2023-02-16,"Telugu, English, Kannada"
+D4249,Driver_290,5.0,33.1,Auto,"Domlur, Malleshwaram, Jayanagar",Weekend Only,80.88,60.94,57.94,3.36,986.51,5.7,Whitefield,12.971315,77.742208,10,19,True,2020-12-12,English
+D3666,Driver_291,4.3,16.3,Auto,,Weekend Only,66.21,51.59,46.79,41.41,838.74,5.1,Jayanagar,12.940045,77.590108,9,17,True,2022-04-29,"English, Hindi, Telugu"
+D7472,Driver_292,4.82,24.1,Auto,"Yelahanka, Electronic City",Weekend Only,72.12,62.32,56.65,11.85,856.11,4.7,Indiranagar,12.980593,77.646249,10,19,True,2021-09-08,"English, Telugu, Kannada"
+D2932,Driver_293,4.24,36.8,Auto,"Bellandur, Indiranagar",Full-time,70.44,53.64,57.57,20.12,1039.32,6.5,Yelahanka,13.098014,77.598677,6,16,True,2020-08-23,"Hindi, Kannada, English"
+D8667,Driver_294,4.26,11.2,Auto,"Yelahanka, Marathahalli, Jayanagar",Weekday Only,75.51,64.92,58.16,15.15,910.99,5.4,Indiranagar,12.977106,77.64403,9,16,True,2022-09-30,"English, Kannada"
+D5200,Driver_295,4.53,38.9,Auto,"Bannerghatta Road, Rajajinagar",Weekday Only,95.23,76.36,64.55,7.91,883.02,4.9,Yelahanka,13.091868,77.597624,8,15,True,2020-06-20,"Telugu, English"
+D2629,Driver_296,4.45,26.6,Auto,,Part-time Morning,63.51,52.52,49.01,8.54,722.49,4.2,Electronic City,12.836582,77.679179,8,13,True,2021-06-27,"Telugu, Tamil"
+D4899,Driver_297,4.23,19.0,Auto,Sarjapur Road,Part-time Morning,73.74,56.13,59.1,15.9,621.06,3.2,Domlur,12.961129,77.63961,6,12,True,2022-02-09,"English, Tamil"
+D3078,Driver_298,3.83,11.0,Premium Auto,,Weekday Only,74.72,58.67,49.77,14.16,943.83,4.9,Rajajinagar,12.985895,77.547413,7,14,False,2022-10-05,Hindi
+D2600,Driver_299,4.75,12.5,Auto,,Part-time Morning,74.17,57.3,58.06,22.99,697.84,4.3,Basavanagudi,12.937512,77.582856,8,14,True,2022-08-24,"English, Tamil, Kannada"
+D2313,Driver_300,5.0,12.8,Auto,Bellandur,Part-time Morning,32.31,27.51,25.55,13.76,705.64,3.7,Sarjapur Road,12.918856,77.687084,6,12,True,2022-08-13,Telugu
+D9445,Driver_301,4.92,6.7,Auto,,Weekend Only,82.6,67.07,61.9,19.91,1072.65,6.6,Basavanagudi,12.935319,77.579818,9,18,True,2023-02-13,English
+D7317,Driver_302,4.28,20.7,Auto,"Jayanagar, Electronic City",Weekday Only,58.39,48.75,39.39,32.55,573.62,3.8,Bannerghatta Road,12.89544,77.605156,7,17,True,2021-12-20,"Tamil, Hindi"
+D7051,Driver_303,4.64,35.4,Premium Auto,"Indiranagar, Basavanagudi",Weekend Only,77.77,57.8,48.96,11.16,748.41,4.2,Yelahanka,13.093632,77.593168,9,17,True,2020-10-05,"Kannada, Hindi, English"
+D1931,Driver_304,4.6,22.9,Auto,"Basavanagudi, BTM Layout",Full-time,74.68,61.15,60.76,3.22,1564.24,8.1,Malleshwaram,13.005742,77.574088,7,17,True,2021-10-14,Kannada
+D1739,Driver_305,4.57,13.0,Auto,,Full-time,69.8,53.82,55.81,6.58,1210.71,6.4,Basavanagudi,12.931289,77.570611,6,16,True,2022-08-06,"Tamil, Hindi"
+D5375,Driver_306,4.22,12.9,Auto,"Indiranagar, BTM Layout, Hebbal",Full-time,87.6,62.48,67.91,19.22,848.76,4.5,Electronic City,12.841569,77.674371,8,19,True,2022-08-11,"Telugu, Tamil, Kannada"
+D8922,Driver_307,4.51,45.0,Auto,"HSR Layout, Rajajinagar",Weekend Only,39.99,34.79,29.18,18.9,925.48,4.7,Domlur,12.96653,77.64069,9,15,True,2019-12-22,Hindi
+D2510,Driver_308,4.17,18.5,Auto,,Part-time Morning,83.45,58.96,63.7,17.77,828.12,5.4,Banashankari,12.930156,77.549349,8,13,True,2022-02-23,English
+D9950,Driver_309,4.33,10.5,Auto,"JP Nagar, Sarjapur Road, Domlur",Part-time Evening,83.53,60.29,55.29,15.84,500.0,3.1,Hebbal,13.033619,77.601074,17,21,True,2022-10-20,Telugu
+D1089,Driver_310,4.39,44.2,Auto,,Part-time Morning,73.33,52.9,51.58,17.8,953.23,5.4,JP Nagar,12.902259,77.59082,8,12,True,2020-01-14,"Hindi, Kannada, Telugu"
+D3506,Driver_311,4.89,26.6,Auto,,Full-time,56.35,40.25,36.15,4.76,1210.15,6.1,Sarjapur Road,12.917356,77.690572,6,17,True,2021-06-25,"Tamil, Hindi"
+D8544,Driver_312,4.03,12.6,Auto,,Full-time,81.84,73.64,59.91,10.67,1038.68,5.3,Bannerghatta Road,12.890972,77.602278,8,17,True,2022-08-20,"Hindi, Telugu"
+D4035,Driver_313,4.33,7.2,Auto,"Jayanagar, MG Road, BTM Layout",Part-time Morning,89.77,71.61,62.33,12.6,809.42,4.1,Electronic City,12.840095,77.684395,8,14,True,2023-01-29,"Tamil, Telugu, Hindi"
+D3385,Driver_314,4.19,7.7,Auto,,Part-time Morning,53.56,39.57,36.3,11.27,500.0,3.0,HSR Layout,12.914276,77.645729,8,14,True,2023-01-13,Hindi
+D3406,Driver_315,4.32,13.6,Auto,Bellandur,Part-time Evening,76.34,62.81,50.67,42.23,983.08,6.2,Domlur,12.957949,77.639929,17,22,True,2022-07-20,English
+D2557,Driver_316,4.4,2.2,Auto,"Banashankari, Electronic City",Full-time,73.07,62.06,47.16,30.31,978.15,5.2,Bellandur,12.926614,77.665009,6,17,False,2023-06-27,Telugu
+D2946,Driver_317,4.32,12.0,Auto,Yelahanka,Weekday Only,60.04,49.59,39.96,13.46,614.34,3.1,Banashankari,12.925881,77.544008,7,15,True,2022-09-08,English
+D6563,Driver_318,4.83,8.7,Auto,"Banashankari, Basavanagudi",Full-time,61.49,45.37,51.3,21.91,1205.93,6.4,Domlur,12.960849,77.645968,6,15,True,2022-12-15,Tamil
+D8240,Driver_319,4.72,4.7,Auto,"HSR Layout, JP Nagar",Full-time,79.4,59.65,60.76,15.55,956.82,6.1,Sarjapur Road,12.911241,77.689411,7,18,True,2023-04-14,"English, Hindi, Kannada"
+D3923,Driver_320,4.94,37.5,Premium Auto,,Weekend Only,76.26,59.17,55.65,15.26,634.96,3.6,Electronic City,12.839338,77.674049,11,17,True,2020-08-02,Tamil
+D9367,Driver_321,4.42,30.5,Auto,"Koramangala, HSR Layout, Marathahalli",Full-time,72.58,57.57,53.55,7.86,1313.32,6.6,BTM Layout,12.913772,77.617776,6,17,True,2021-02-27,Tamil
+D3530,Driver_322,4.65,15.9,Auto,,Full-time,73.29,52.4,53.78,5.18,1090.14,6.4,JP Nagar,12.907713,77.586729,7,17,True,2022-05-14,"Tamil, Kannada"
+D4122,Driver_323,4.22,6.4,Auto,,Part-time Morning,73.59,58.37,53.95,12.4,590.71,3.9,Yelahanka,13.108943,77.600877,7,13,True,2023-02-22,"Tamil, English"
+D6321,Driver_324,4.93,14.1,Premium Auto,,Weekend Only,57.9,47.62,46.28,20.27,891.42,4.7,Bellandur,12.9351,77.664484,11,20,True,2022-07-06,"English, Tamil"
+D9732,Driver_325,4.27,32.7,Auto,"JP Nagar, Bellandur, BTM Layout",Part-time Morning,33.23,28.78,27.38,10.63,772.72,4.2,HSR Layout,12.908953,77.636346,7,12,True,2020-12-25,Kannada
+D7685,Driver_326,4.23,11.0,Auto,,Weekend Only,88.16,78.79,70.11,20.15,726.46,4.5,BTM Layout,12.929407,77.605722,11,19,True,2022-10-05,"Hindi, Kannada, English"
+D3839,Driver_327,4.6,13.6,Auto,,Full-time,75.64,66.72,47.81,28.76,1270.08,8.4,Malleshwaram,13.00181,77.578675,7,16,True,2022-07-22,"Kannada, Tamil"
+D3387,Driver_328,4.24,24.1,Auto,"BTM Layout, MG Road",Weekday Only,88.95,73.2,72.08,6.68,1104.85,6.4,Yelahanka,13.098387,77.596135,9,18,True,2021-09-09,Tamil
+D1132,Driver_329,4.73,5.7,Premium Auto,"Bannerghatta Road, Sarjapur Road, Basavanagudi",Weekend Only,62.19,55.96,39.87,9.35,951.83,5.1,Bellandur,12.930133,77.665526,8,14,True,2023-03-13,Hindi
+D9944,Driver_330,4.37,24.8,Auto,"Electronic City, HSR Layout",Weekday Only,75.59,54.92,63.04,10.49,1096.88,7.1,Basavanagudi,12.943394,77.574109,9,16,True,2021-08-19,"Hindi, Tamil, Telugu"
+D9362,Driver_331,4.63,45.5,Premium Auto,,Weekday Only,90.76,67.39,59.44,0.89,989.72,5.9,HSR Layout,12.902931,77.648929,8,16,True,2019-12-05,"English, Hindi"
+D2357,Driver_332,4.61,30.3,Premium Auto,,Full-time,93.26,65.89,66.92,2.97,1122.41,6.4,Koramangala,12.933336,77.625927,8,16,True,2021-03-06,"English, Kannada, Hindi"
+D6972,Driver_333,4.73,2.8,Auto,"HSR Layout, Yelahanka",Part-time Evening,85.57,76.91,57.88,13.52,702.2,4.0,MG Road,12.980687,77.610471,16,21,False,2023-06-10,"English, Hindi"
+D8228,Driver_334,4.02,17.1,Premium Auto,Whitefield,Part-time Morning,88.34,71.16,65.37,1.95,575.2,3.7,JP Nagar,12.908777,77.600122,8,13,True,2022-04-08,"Tamil, English"
+D3619,Driver_335,4.3,20.6,Auto,,Part-time Evening,91.25,79.02,74.08,21.19,543.87,2.9,Koramangala,12.92537,77.629235,17,21,True,2021-12-21,Telugu
+D7702,Driver_336,4.3,70.4,Auto,Electronic City,Full-time,33.95,26.11,22.17,16.34,1294.43,8.3,Domlur,12.960909,77.646154,7,18,True,2017-11-19,"Tamil, Hindi"
+D3832,Driver_337,4.52,19.1,Auto,"BTM Layout, Yelahanka, Banashankari",Part-time Evening,85.04,61.84,64.87,7.79,858.13,4.5,Rajajinagar,12.979509,77.552605,17,23,True,2022-02-06,Hindi
+D7804,Driver_338,4.33,9.5,Auto,"Bannerghatta Road, BTM Layout",Full-time,76.59,66.17,63.05,13.36,911.73,5.2,JP Nagar,12.907309,77.58885,6,14,True,2022-11-20,"English, Kannada"
+D3143,Driver_339,4.18,4.9,Auto,,Weekend Only,89.45,75.2,69.94,15.02,735.64,4.8,Bannerghatta Road,12.892118,77.595287,8,14,False,2023-04-09,Telugu
+D5418,Driver_340,4.28,21.8,Premium Auto,"Domlur, MG Road",Part-time Morning,55.72,42.7,34.81,12.72,715.22,4.2,JP Nagar,12.917432,77.59021,7,11,True,2021-11-17,Telugu
+D7676,Driver_341,4.12,6.0,Auto,"Electronic City, Yelahanka, Domlur",Full-time,87.16,66.43,63.17,29.19,1062.2,5.6,BTM Layout,12.919627,77.606856,8,16,True,2023-03-05,"Kannada, English, Telugu"
+D5962,Driver_342,4.69,31.3,Auto,"Hebbal, Basavanagudi",Part-time Morning,92.83,75.7,78.74,20.54,588.32,3.4,Yelahanka,13.097989,77.594239,6,12,True,2021-02-05,"Tamil, Telugu, Kannada"
+D5760,Driver_343,4.2,28.7,Auto,,Full-time,48.83,40.22,34.63,12.31,1379.46,8.1,Yelahanka,13.096233,77.594155,7,18,True,2021-04-23,"Telugu, Hindi, Kannada"
+D5653,Driver_344,3.94,30.2,Premium Auto,,Weekend Only,80.1,68.41,50.04,5.44,658.29,3.3,MG Road,12.983562,77.600347,10,19,True,2021-03-09,"Kannada, English, Hindi"
+D6694,Driver_345,4.59,24.3,Auto,JP Nagar,Weekend Only,82.79,64.0,64.1,1.91,1099.28,7.0,Bellandur,12.926134,77.666678,10,18,True,2021-09-03,"Tamil, Kannada"
+D8432,Driver_346,4.27,2.3,Auto,Domlur,Weekend Only,68.0,48.0,57.05,31.98,1093.07,6.2,MG Road,12.969625,77.617185,10,16,False,2023-06-24,"Hindi, Telugu, English"
+D2568,Driver_347,5.0,12.6,Premium Auto,"Yelahanka, Bannerghatta Road",Part-time Morning,92.55,78.57,75.67,22.05,661.12,3.5,JP Nagar,12.909538,77.593841,6,12,True,2022-08-18,"English, Tamil"
+D1838,Driver_348,4.41,3.0,Auto,"Whitefield, Sarjapur Road, Rajajinagar",Weekday Only,84.46,71.52,52.9,34.78,849.21,5.5,Banashankari,12.931351,77.551424,8,16,False,2023-06-04,"Hindi, Tamil, Kannada"
+D6150,Driver_349,4.81,45.6,Premium Auto,,Weekend Only,64.47,46.85,53.17,15.5,976.87,4.9,Yelahanka,13.097655,77.601752,8,16,True,2019-12-03,Hindi
+D5098,Driver_350,4.41,15.9,Auto,Malleshwaram,Full-time,77.61,54.7,65.02,24.29,1364.59,7.6,Indiranagar,12.978412,77.638005,6,15,True,2022-05-12,"Hindi, Tamil, Telugu"
+D4438,Driver_351,5.0,9.9,Auto,Bannerghatta Road,Weekend Only,64.37,50.31,43.37,19.46,954.7,6.0,Rajajinagar,12.974677,77.551202,9,15,True,2022-11-10,English
+D6545,Driver_352,4.63,2.9,Auto,,Weekday Only,71.47,63.76,55.67,3.78,968.62,6.1,Whitefield,12.967166,77.746296,8,16,False,2023-06-07,"Kannada, English, Tamil"
+D6855,Driver_353,4.37,21.0,Auto,"HSR Layout, Bannerghatta Road",Part-time Evening,89.96,75.48,60.86,8.33,500.0,2.7,Indiranagar,12.985583,77.636132,16,22,True,2021-12-11,"Telugu, Tamil, English"
+D1987,Driver_354,4.42,20.5,Auto,,Weekday Only,88.32,72.53,60.62,25.19,825.91,5.0,Bannerghatta Road,12.904194,77.599142,7,15,True,2021-12-26,"Kannada, Tamil"
+D6883,Driver_355,4.56,58.3,Premium Auto,"Rajajinagar, Basavanagudi, Electronic City",Weekend Only,65.07,54.37,55.26,5.39,1074.84,5.6,Malleshwaram,13.005005,77.557686,8,14,True,2018-11-16,Hindi
+D5647,Driver_356,4.83,45.1,Auto,,Weekend Only,50.03,44.1,33.78,3.1,781.46,4.9,Domlur,12.96708,77.625639,9,16,True,2019-12-17,Hindi
+D1229,Driver_357,4.32,8.3,Premium Auto,,Part-time Evening,54.36,39.98,38.79,46.83,926.93,4.9,Marathahalli,12.958256,77.699767,15,20,True,2022-12-27,Hindi
+D5288,Driver_358,4.31,14.9,Premium Auto,BTM Layout,Weekend Only,83.67,69.59,52.97,6.85,714.66,3.7,Bannerghatta Road,12.893462,77.598217,9,16,True,2022-06-11,Telugu
+D9365,Driver_359,4.43,16.5,Premium Auto,"MG Road, JP Nagar",Weekend Only,77.39,59.33,60.62,1.5,958.47,5.3,Yelahanka,13.097322,77.598291,11,17,True,2022-04-23,English
+D5295,Driver_360,4.53,42.7,Auto,,Part-time Morning,74.26,56.07,54.62,1.03,690.76,3.7,Indiranagar,12.979756,77.636977,8,13,True,2020-02-29,"Kannada, Tamil"
+D5606,Driver_361,4.35,16.7,Auto,"Basavanagudi, Bannerghatta Road",Part-time Evening,78.51,59.28,60.45,16.69,619.07,3.4,Rajajinagar,12.981268,77.55429,17,23,True,2022-04-18,"Hindi, Tamil, Kannada"
+D4900,Driver_362,4.68,102.9,Premium Auto,,Weekend Only,47.43,36.82,30.78,10.41,613.57,3.9,Hebbal,13.044987,77.593303,11,20,True,2015-03-19,Kannada
+D3363,Driver_363,4.63,3.3,Auto,"Koramangala, Rajajinagar",Part-time Morning,86.59,61.13,65.73,20.0,633.59,3.6,Koramangala,12.940852,77.630782,8,13,True,2023-05-25,"Hindi, Kannada"
+D3165,Driver_364,4.37,9.9,Auto,,Full-time,85.15,68.27,62.48,3.04,1294.3,6.5,Malleshwaram,13.001385,77.566387,6,15,True,2022-11-10,"Hindi, Tamil"
+D2793,Driver_365,4.81,34.2,Auto,Yelahanka,Full-time,73.82,61.61,47.96,1.59,1133.56,6.2,Basavanagudi,12.947096,77.578145,9,20,True,2020-11-10,"English, Telugu, Tamil"
+D2584,Driver_366,4.63,10.6,Auto,,Weekend Only,73.97,54.78,58.4,14.23,854.43,4.3,Jayanagar,12.935253,77.596761,10,16,True,2022-10-18,"Tamil, Telugu"
+D9992,Driver_367,4.46,23.4,Auto,"Sarjapur Road, Rajajinagar, MG Road",Weekday Only,77.11,55.59,62.14,13.28,1015.9,5.9,JP Nagar,12.903973,77.587747,8,18,True,2021-10-01,"Kannada, Tamil, Telugu"
+D9318,Driver_368,3.82,28.3,Auto,Malleshwaram,Weekday Only,65.56,57.43,55.67,3.92,999.07,5.4,Hebbal,13.040986,77.600584,9,18,True,2021-05-05,"Hindi, Tamil, Telugu"
+D8016,Driver_369,4.88,5.6,Auto,Bellandur,Part-time Morning,67.25,58.95,47.12,23.1,700.96,3.7,HSR Layout,12.905425,77.640674,8,12,True,2023-03-17,Telugu
+D6286,Driver_370,4.69,2.9,Auto,,Weekday Only,81.99,68.4,53.32,22.33,633.27,3.9,BTM Layout,12.920423,77.603157,9,17,False,2023-06-06,"Tamil, English, Hindi"
+D9325,Driver_371,4.17,6.3,Auto,HSR Layout,Part-time Evening,53.91,45.83,43.98,10.59,597.19,3.2,MG Road,12.975718,77.618809,17,23,True,2023-02-24,"English, Tamil, Hindi"
+D9782,Driver_372,4.16,29.4,Premium Auto,,Weekend Only,62.89,48.89,52.72,5.8,854.73,5.5,MG Road,12.974688,77.603765,8,17,True,2021-04-03,Tamil
+D9842,Driver_373,4.72,9.7,Auto,,Weekend Only,49.12,35.28,35.09,33.44,910.62,5.9,Indiranagar,12.983686,77.63836,11,19,True,2022-11-15,"Telugu, Tamil"
+D3566,Driver_374,4.22,8.0,Auto,"BTM Layout, Domlur, Banashankari",Weekend Only,70.85,57.37,54.53,14.73,728.58,4.2,Indiranagar,12.982648,77.639713,8,15,True,2023-01-04,Telugu
+D5588,Driver_375,4.43,22.3,Auto,,Full-time,67.15,54.2,50.63,32.28,1000.36,6.0,BTM Layout,12.925063,77.608977,9,19,True,2021-11-02,"Tamil, English"
+D9247,Driver_376,4.64,16.3,Auto,"MG Road, Jayanagar, Yelahanka",Weekday Only,86.5,70.06,68.96,15.76,994.2,5.1,Jayanagar,12.933473,77.609039,9,19,True,2022-05-02,Hindi
+D7188,Driver_377,4.13,24.4,Auto,Bellandur,Full-time,53.84,38.84,41.58,4.46,1123.93,6.1,Koramangala,12.927776,77.62787,7,16,True,2021-08-31,Kannada
+D3421,Driver_378,4.56,34.0,Auto,"HSR Layout, JP Nagar",Part-time Evening,42.06,31.44,32.22,5.52,599.9,3.9,HSR Layout,12.916738,77.651302,15,21,True,2020-11-17,"Telugu, Tamil, Hindi"
+D2104,Driver_379,4.3,6.0,Auto,,Full-time,74.73,58.62,51.71,23.14,947.72,5.8,Whitefield,12.968576,77.756457,6,15,True,2023-03-05,"Tamil, English, Telugu"
+D6771,Driver_380,4.58,5.8,Auto,"Basavanagudi, Yelahanka",Weekday Only,86.39,61.7,60.6,7.33,717.25,4.5,HSR Layout,12.910325,77.644279,8,15,True,2023-03-12,"Tamil, Hindi, Kannada"
+D4332,Driver_381,4.68,24.3,Premium Auto,Sarjapur Road,Part-time Morning,69.62,51.59,56.47,6.92,736.86,4.2,Basavanagudi,12.935272,77.571574,6,10,True,2021-09-03,"Telugu, Tamil, English"
+D2643,Driver_382,4.84,12.0,Auto,,Weekend Only,75.8,66.48,50.32,6.92,777.1,4.4,Bellandur,12.92567,77.662636,11,17,True,2022-09-07,"English, Hindi"
+D7903,Driver_383,4.71,8.2,Auto,"Rajajinagar, BTM Layout, Whitefield",Full-time,72.42,55.68,59.99,7.13,1156.62,7.4,Malleshwaram,12.999185,77.572347,9,20,True,2022-12-28,Kannada
+D4980,Driver_384,4.69,62.1,Auto,"Domlur, Rajajinagar, Indiranagar",Full-time,66.87,53.37,41.0,13.49,1048.96,6.6,Electronic City,12.837565,77.671788,7,15,True,2018-07-26,"Hindi, Tamil, Kannada"
+D6863,Driver_385,3.95,26.2,Auto,,Weekday Only,70.65,54.94,48.91,22.76,1093.86,5.9,BTM Layout,12.921138,77.609294,9,16,True,2021-07-07,Telugu
+D7894,Driver_386,5.0,7.5,Auto,"Electronic City, Bellandur, Basavanagudi",Weekend Only,86.28,62.25,68.48,13.37,787.37,4.8,Marathahalli,12.95963,77.694792,9,15,True,2023-01-20,Tamil
+D5461,Driver_387,4.44,20.7,Auto,"Jayanagar, Hebbal, Indiranagar",Full-time,61.71,52.62,38.69,5.32,1181.64,7.3,JP Nagar,12.904729,77.584562,8,16,True,2021-12-19,"Hindi, Kannada"
+D2342,Driver_388,4.57,16.8,Auto,,Part-time Evening,93.37,75.78,64.74,12.95,679.3,3.5,Whitefield,12.970243,77.741166,16,20,True,2022-04-16,"Tamil, English"
+D8065,Driver_389,4.72,15.2,Auto,,Weekday Only,82.17,61.86,66.45,22.92,1166.59,6.4,Bellandur,12.926033,77.669379,8,16,True,2022-06-03,Kannada
+D9052,Driver_390,4.75,14.0,Auto,"HSR Layout, Bannerghatta Road",Weekend Only,92.03,75.93,74.46,12.51,647.98,3.6,Banashankari,12.924878,77.54712,9,15,True,2022-07-08,"Tamil, Telugu, English"
+D5907,Driver_391,4.4,13.5,Premium Auto,"BTM Layout, Basavanagudi",Full-time,93.41,77.05,59.6,13.09,1417.76,7.8,Electronic City,12.850018,77.679934,7,18,True,2022-07-23,"Hindi, Kannada, Tamil"
+D9267,Driver_392,4.71,66.5,Auto,Banashankari,Full-time,95.96,76.33,77.13,14.77,1446.32,9.2,Bannerghatta Road,12.891468,77.597344,8,19,True,2018-03-15,"English, Tamil"
+D9398,Driver_393,4.68,6.0,Premium Auto,,Part-time Evening,84.94,66.42,71.92,16.75,850.48,4.3,MG Road,12.967232,77.618486,16,22,True,2023-03-07,Hindi
+D6658,Driver_394,4.36,17.1,Auto,"Bannerghatta Road, HSR Layout, JP Nagar",Full-time,70.35,59.63,44.53,7.39,1056.51,5.3,Electronic City,12.833033,77.67646,7,18,True,2022-04-05,Tamil
+D7353,Driver_395,4.45,26.9,Auto,,Weekday Only,71.98,56.53,56.8,7.64,863.48,4.6,Malleshwaram,13.005624,77.577591,9,16,True,2021-06-17,"Kannada, Hindi, Telugu"
+D3185,Driver_396,4.51,21.6,Auto,,Weekend Only,76.0,65.71,46.08,11.98,609.19,3.3,Electronic City,12.84626,77.674225,10,18,True,2021-11-21,"Hindi, Tamil"
+D1847,Driver_397,4.29,23.9,Auto,"Sarjapur Road, Hebbal, Indiranagar",Part-time Morning,88.89,69.41,62.71,13.24,762.0,3.9,HSR Layout,12.911824,77.643771,7,11,True,2021-09-15,"Hindi, Tamil, Telugu"
+D7391,Driver_398,4.76,74.2,Auto,"Malleshwaram, Indiranagar, Koramangala",Weekend Only,75.37,63.79,52.87,8.71,1093.62,5.9,Rajajinagar,12.989333,77.55441,11,18,True,2017-07-28,"Tamil, Hindi, Kannada"
+D5318,Driver_399,4.36,14.2,Auto,Malleshwaram,Weekday Only,59.91,48.97,47.49,7.74,1141.81,7.4,BTM Layout,12.920134,77.612342,7,17,True,2022-07-02,Telugu
+D4137,Driver_400,4.11,4.7,Auto,"MG Road, Sarjapur Road",Weekend Only,97.11,76.91,79.12,35.09,1317.18,7.2,BTM Layout,12.919405,77.608596,8,14,False,2023-04-14,Kannada
+D5049,Driver_401,4.28,9.9,Auto,Marathahalli,Full-time,73.57,63.03,58.88,15.27,1126.66,6.7,Whitefield,12.978534,77.752728,9,17,True,2022-11-10,"English, Kannada"
+D1673,Driver_402,4.53,15.1,Auto,,Weekday Only,67.18,48.38,53.59,19.94,587.55,3.0,Sarjapur Road,12.912843,77.686504,7,14,True,2022-06-04,"Kannada, English"
+D5552,Driver_403,4.78,29.0,Auto,Jayanagar,Full-time,51.07,39.85,38.6,7.62,1482.18,8.3,Jayanagar,12.925987,77.595281,9,19,True,2021-04-14,Hindi
+D4131,Driver_404,4.42,24.7,Auto,,Part-time Morning,81.29,58.35,66.38,11.73,593.0,3.7,Electronic City,12.844427,77.681648,7,11,True,2021-08-20,Telugu
+D5158,Driver_405,3.96,22.7,Auto,,Weekday Only,81.83,58.63,59.39,12.44,839.51,5.0,Jayanagar,12.93373,77.598041,7,15,True,2021-10-20,Tamil
+D4138,Driver_406,4.76,25.4,Auto,,Part-time Evening,93.06,73.0,63.13,9.02,636.27,4.2,MG Road,12.984495,77.613403,16,21,True,2021-08-01,"Tamil, English"
+D6123,Driver_407,4.5,29.3,Auto,,Weekend Only,76.49,57.43,49.23,10.44,613.16,3.5,Jayanagar,12.931939,77.592253,10,17,True,2021-04-05,"Hindi, Kannada, English"
+D6489,Driver_408,5.0,41.0,Auto,,Weekday Only,81.78,61.52,65.74,6.9,921.74,5.0,Domlur,12.959574,77.642749,7,17,True,2020-04-19,"Telugu, Tamil"
+D9408,Driver_409,4.78,27.3,Premium Auto,,Weekend Only,78.59,63.44,47.74,6.86,657.62,3.3,Yelahanka,13.105579,77.602043,11,19,True,2021-06-05,"Hindi, Tamil, Telugu"
+D4325,Driver_410,4.21,82.2,Auto,"Bellandur, Sarjapur Road",Part-time Evening,79.89,70.75,67.01,10.4,660.29,4.0,Bellandur,12.928503,77.667065,17,23,True,2016-12-01,Telugu
+D4370,Driver_411,4.29,3.7,Auto,,Full-time,57.8,43.08,47.84,21.07,1172.96,7.3,Bellandur,12.936857,77.666522,9,20,False,2023-05-14,"Kannada, Telugu, English"
+D3294,Driver_412,4.66,15.4,Auto,,Full-time,35.89,25.7,27.53,7.51,811.64,4.7,HSR Layout,12.911344,77.648075,8,19,True,2022-05-27,"Kannada, Tamil, Telugu"
+D2116,Driver_413,4.62,38.9,Auto,,Part-time Morning,88.0,75.18,63.73,13.81,984.18,6.5,Yelahanka,13.096892,77.591626,8,13,True,2020-06-20,Telugu
+D8922,Driver_414,4.76,1.1,Premium Auto,"Whitefield, Basavanagudi",Weekday Only,71.81,54.36,50.96,8.09,701.71,4.4,Marathahalli,12.951605,77.694541,9,16,False,2023-07-31,"English, Kannada, Tamil"
+D5817,Driver_415,4.66,7.8,Auto,,Weekend Only,80.92,66.76,51.91,12.83,1118.99,6.9,Sarjapur Road,12.912156,77.683314,11,17,True,2023-01-10,Hindi
+D9849,Driver_416,4.55,13.9,Auto,"JP Nagar, Indiranagar",Weekend Only,69.74,57.83,41.86,12.39,765.39,3.8,Domlur,12.967319,77.634815,11,19,True,2022-07-11,"Telugu, Tamil, Kannada"
+D2409,Driver_417,4.88,6.7,Auto,"Hebbal, Basavanagudi, Koramangala",Weekday Only,68.59,52.11,47.88,23.57,800.47,5.1,Sarjapur Road,12.911884,77.691204,7,16,True,2023-02-12,"Tamil, Telugu, Kannada"
+D2817,Driver_418,4.01,3.6,Auto,Basavanagudi,Weekday Only,79.25,71.15,58.31,30.54,809.3,4.5,MG Road,12.970699,77.612662,8,15,False,2023-05-18,"Telugu, Hindi, Tamil"
+D3966,Driver_419,4.47,26.9,Premium Auto,Rajajinagar,Part-time Evening,48.12,39.7,35.51,15.22,501.52,3.1,Koramangala,12.921678,77.62537,15,20,True,2021-06-16,"Kannada, Tamil"
+D9357,Driver_420,4.48,24.4,Auto,,Weekday Only,70.19,49.22,51.75,26.78,1016.88,5.7,Sarjapur Road,12.921307,77.68918,8,17,True,2021-08-30,"English, Hindi, Telugu"
+D6865,Driver_421,4.74,16.4,Auto,,Weekend Only,45.01,35.44,27.5,25.71,1012.47,5.9,JP Nagar,12.910292,77.59238,10,19,True,2022-04-27,Tamil
+D4406,Driver_422,4.34,24.5,Auto,,Part-time Evening,54.19,37.97,35.63,5.49,766.44,4.7,Hebbal,13.020962,77.604698,17,22,True,2021-08-28,"Telugu, Hindi, Tamil"
+D7225,Driver_423,4.36,20.9,Premium Auto,Domlur,Weekday Only,86.59,67.98,58.13,5.69,783.79,4.8,Electronic City,12.829199,77.681623,7,16,True,2021-12-13,Tamil
+D5121,Driver_424,4.58,17.4,Auto,,Part-time Morning,78.56,56.88,66.23,17.2,841.12,4.4,Banashankari,12.933374,77.54786,8,13,True,2022-03-28,Telugu
+D3369,Driver_425,4.54,56.8,Auto,Bannerghatta Road,Part-time Morning,90.39,76.78,69.2,5.61,880.67,5.0,Banashankari,12.924041,77.544953,6,11,True,2019-01-03,"Telugu, Tamil, Hindi"
+D1680,Driver_426,4.56,21.2,Premium Auto,,Part-time Evening,93.0,80.03,67.9,27.23,870.23,5.6,JP Nagar,12.903052,77.588782,15,20,True,2021-12-04,"Hindi, Tamil"
+D8227,Driver_427,4.88,16.5,Auto,"Banashankari, JP Nagar, Sarjapur Road",Part-time Evening,76.68,68.68,59.04,17.26,704.85,3.8,HSR Layout,12.905537,77.644929,15,21,True,2022-04-25,"Tamil, Telugu, English"
+D5516,Driver_428,4.56,7.8,Auto,,Weekend Only,69.54,54.18,43.04,6.9,1042.27,5.5,Whitefield,12.968629,77.752629,11,17,True,2023-01-11,"Telugu, Kannada, English"
+D1554,Driver_429,4.03,15.0,Auto,"Whitefield, Indiranagar, Electronic City",Part-time Morning,52.24,43.19,36.83,2.77,614.5,3.1,Koramangala,12.938095,77.63362,8,13,True,2022-06-09,"Telugu, English"
+D1155,Driver_430,4.33,11.7,Auto,"Koramangala, Whitefield, Hebbal",Full-time,72.71,59.33,49.84,25.58,1053.24,6.1,JP Nagar,12.899879,77.589488,9,19,True,2022-09-17,Tamil
+D3282,Driver_431,4.08,13.4,Premium Auto,Malleshwaram,Weekend Only,67.58,51.41,55.84,33.29,1047.25,5.7,Indiranagar,12.984432,77.640402,10,16,True,2022-07-26,"Tamil, Kannada, English"
+D2650,Driver_432,4.53,6.9,Premium Auto,,Full-time,48.48,35.95,31.19,19.99,1259.92,7.3,Indiranagar,12.974392,77.641555,8,16,True,2023-02-05,"Kannada, Tamil, Telugu"
+D6115,Driver_433,4.76,17.6,Auto,"Jayanagar, Bannerghatta Road",Weekend Only,86.35,70.17,72.42,19.53,825.24,5.3,Marathahalli,12.961735,77.697046,11,19,True,2022-03-21,Telugu
+D3348,Driver_434,4.5,7.5,Auto,"BTM Layout, Rajajinagar",Weekend Only,96.66,80.58,77.43,17.26,938.12,5.2,Electronic City,12.842243,77.681856,8,15,True,2023-01-21,Tamil
+D4640,Driver_435,4.52,15.8,Auto,,Weekend Only,60.05,42.05,40.88,44.06,932.53,5.5,Basavanagudi,12.937918,77.5781,8,15,True,2022-05-15,"Tamil, Kannada"
+D4459,Driver_436,3.98,12.8,Auto,"Electronic City, Malleshwaram",Weekend Only,44.92,39.05,37.3,9.76,1207.68,6.7,Rajajinagar,12.987797,77.555776,9,16,True,2022-08-13,Telugu
+D1684,Driver_437,4.11,10.1,Auto,"Sarjapur Road, Malleshwaram, Domlur",Weekend Only,84.4,68.26,56.77,2.16,747.98,4.7,MG Road,12.975071,77.607878,10,19,True,2022-11-02,"English, Hindi, Tamil"
+D6810,Driver_438,4.42,11.5,Auto,,Part-time Morning,87.72,67.78,62.65,30.08,589.04,3.7,Banashankari,12.93006,77.549572,8,12,True,2022-09-23,Telugu
+D2306,Driver_439,4.76,8.3,Auto,,Full-time,54.75,39.77,43.35,1.52,703.89,4.3,HSR Layout,12.913685,77.648313,9,20,True,2022-12-26,Kannada
+D7792,Driver_440,4.22,17.0,Auto,"Bellandur, Indiranagar",Weekday Only,69.29,52.32,46.08,16.07,729.1,4.4,Bellandur,12.926601,77.675057,7,17,True,2022-04-10,"Kannada, English, Hindi"
+D4769,Driver_441,4.29,26.5,Auto,,Weekend Only,61.08,52.52,40.64,2.76,993.45,5.4,Whitefield,12.971598,77.750528,9,18,True,2021-06-28,"Tamil, Hindi, Kannada"
+D4100,Driver_442,4.1,43.6,Auto,Bannerghatta Road,Weekday Only,46.92,38.29,30.26,2.25,1000.24,6.3,Koramangala,12.928279,77.625861,9,18,True,2020-02-01,"Kannada, Telugu"
+D2117,Driver_443,4.63,43.7,Premium Auto,Sarjapur Road,Weekend Only,80.25,68.73,54.48,20.87,1141.35,6.2,Yelahanka,13.100378,77.592749,10,18,True,2020-01-30,"Tamil, Telugu"
+D1327,Driver_444,4.26,28.8,Auto,"Yelahanka, Rajajinagar",Weekend Only,60.04,53.42,38.26,20.9,856.59,4.5,Marathahalli,12.963168,77.697922,10,19,True,2021-04-20,"Tamil, Hindi, Kannada"
+D3488,Driver_445,5.0,15.4,Auto,"Hebbal, Jayanagar",Part-time Evening,88.24,76.68,74.81,9.99,571.51,3.2,Rajajinagar,12.974932,77.546964,15,21,True,2022-05-28,"Hindi, Kannada"
+D6974,Driver_446,4.44,13.8,Auto,"Yelahanka, Basavanagudi",Part-time Morning,70.65,53.79,53.25,4.81,961.11,5.4,Bannerghatta Road,12.890012,77.602469,7,13,True,2022-07-14,"Telugu, Hindi, Tamil"
+D3670,Driver_447,4.4,27.5,Premium Auto,,Part-time Evening,52.12,37.84,34.14,24.53,786.45,4.8,Basavanagudi,12.940135,77.586457,15,21,True,2021-05-29,"Tamil, Telugu"
+D1589,Driver_448,4.8,37.8,Auto,,Weekend Only,74.92,54.9,53.65,15.1,967.31,5.7,Whitefield,12.965014,77.753712,10,17,True,2020-07-23,"English, Kannada"
+D7082,Driver_449,4.34,3.7,Auto,"Jayanagar, MG Road",Part-time Morning,63.73,51.29,38.89,18.92,790.41,4.2,BTM Layout,12.913868,77.607793,8,14,False,2023-05-14,"Tamil, Kannada, Hindi"
+D6753,Driver_450,4.25,46.8,Auto,,Weekend Only,94.76,70.36,58.01,17.86,944.9,5.0,Domlur,12.965438,77.638859,9,18,True,2019-10-30,"Tamil, Hindi, Kannada"
+D1461,Driver_451,4.35,13.2,Auto,"Electronic City, Hebbal, Marathahalli",Part-time Morning,66.93,55.54,40.96,24.63,646.79,3.7,Hebbal,13.036435,77.595402,7,13,True,2022-08-02,"Telugu, Kannada"
+D7193,Driver_452,4.78,23.6,Auto,,Part-time Evening,66.23,49.7,51.2,21.93,882.35,4.6,Marathahalli,12.959774,77.703157,17,21,True,2021-09-23,English
+D2281,Driver_453,4.37,18.4,Auto,,Part-time Morning,81.0,67.39,63.7,1.57,633.01,3.9,Indiranagar,12.975592,77.636612,8,14,True,2022-02-27,"Hindi, Telugu"
+D4840,Driver_454,4.53,9.1,Auto,Malleshwaram,Part-time Morning,82.23,66.81,66.7,11.47,1036.45,6.8,Marathahalli,12.957696,77.706928,7,11,True,2022-12-04,"Tamil, English"
+D7281,Driver_455,4.92,31.6,Premium Auto,"Marathahalli, Indiranagar",Weekend Only,79.45,63.05,66.43,17.98,900.23,6.0,Bannerghatta Road,12.892452,77.602377,9,16,True,2021-01-26,"English, Kannada"
+D8232,Driver_456,4.42,14.9,Auto,Malleshwaram,Weekday Only,78.64,57.29,57.5,3.47,736.24,4.0,Bannerghatta Road,12.893258,77.594489,8,18,True,2022-06-13,"Hindi, English"
+D4033,Driver_457,3.66,5.0,Auto,,Weekday Only,73.14,53.63,53.72,7.91,1111.37,5.6,BTM Layout,12.921554,77.60615,9,16,False,2023-04-06,"English, Tamil"
+D5099,Driver_458,4.3,24.6,Premium Auto,,Weekday Only,97.33,75.84,66.86,26.67,1068.6,6.2,Malleshwaram,13.006507,77.577657,9,18,True,2021-08-25,Tamil
+D1906,Driver_459,4.26,60.6,Auto,"BTM Layout, Banashankari, Domlur",Weekday Only,77.65,57.22,65.76,2.37,989.65,6.2,Koramangala,12.929474,77.622441,9,16,True,2018-09-11,Hindi
+D4388,Driver_460,4.76,16.1,Premium Auto,"Domlur, Whitefield",Weekend Only,69.98,61.81,59.2,12.69,1055.55,6.1,MG Road,12.968888,77.613086,8,17,True,2022-05-07,"English, Hindi"
+D4075,Driver_461,4.75,30.9,Auto,,Part-time Evening,54.29,44.89,36.87,9.04,808.36,5.2,Bellandur,12.92838,77.667408,16,20,True,2021-02-17,Telugu
+D9767,Driver_462,3.95,3.2,Auto,,Weekend Only,65.29,52.08,50.56,17.02,1034.74,6.8,Bellandur,12.929129,77.665066,11,18,False,2023-05-28,"English, Kannada"
+D7546,Driver_463,4.49,20.2,Auto,,Part-time Morning,65.94,46.95,49.48,45.78,983.28,6.0,MG Road,12.972997,77.620217,6,11,True,2022-01-03,"Kannada, Tamil, Telugu"
+D5172,Driver_464,4.16,16.7,Auto,"Sarjapur Road, MG Road, BTM Layout",Weekday Only,82.58,66.48,57.48,19.47,1084.17,5.9,Koramangala,12.940149,77.622112,9,18,True,2022-04-18,"Tamil, Telugu"
+D9885,Driver_465,4.27,28.1,Premium Auto,Sarjapur Road,Part-time Morning,97.45,76.05,78.11,19.84,983.49,6.3,Indiranagar,12.972362,77.638063,6,11,True,2021-05-12,"English, Telugu, Hindi"
+D2578,Driver_466,4.71,12.8,Premium Auto,,Weekend Only,38.97,33.97,24.61,14.92,815.94,4.6,Hebbal,13.03139,77.602505,11,19,True,2022-08-12,"Telugu, Tamil, English"
+D7286,Driver_467,4.34,22.4,Auto,"Indiranagar, Hebbal, Rajajinagar",Weekend Only,73.09,61.45,56.19,27.25,940.15,5.1,Bannerghatta Road,12.892409,77.592477,11,17,True,2021-10-31,"Tamil, Hindi, Telugu"
+D7410,Driver_468,4.74,7.1,Auto,Domlur,Full-time,67.48,58.62,42.53,9.88,954.47,5.0,Banashankari,12.926464,77.548401,6,14,True,2023-01-30,Hindi
+D9116,Driver_469,3.98,14.4,Auto,"Sarjapur Road, JP Nagar",Full-time,60.04,43.12,49.47,4.27,1230.7,6.2,MG Road,12.972561,77.610262,7,16,True,2022-06-27,English
+D1123,Driver_470,4.2,8.7,Auto,,Full-time,55.03,46.47,35.87,31.88,1193.54,7.0,Bellandur,12.927399,77.663555,8,17,True,2022-12-15,Hindi
+D2731,Driver_471,4.18,47.5,Premium Auto,"Electronic City, Basavanagudi",Part-time Evening,64.91,56.12,49.68,3.32,671.11,3.5,Jayanagar,12.931642,77.587178,16,22,True,2019-10-07,"English, Tamil"
+D3895,Driver_472,4.54,34.8,Auto,"Hebbal, Basavanagudi",Full-time,32.47,27.42,27.25,27.0,1320.54,8.6,Domlur,12.956398,77.637681,6,15,True,2020-10-22,"Telugu, Tamil"
+D3967,Driver_473,4.69,5.1,Premium Auto,"Koramangala, Yelahanka",Part-time Evening,78.78,62.35,61.32,41.72,635.24,3.4,Bannerghatta Road,12.882873,77.59879,15,19,True,2023-03-31,"English, Tamil"
+D1271,Driver_474,4.19,7.6,Auto,Indiranagar,Weekday Only,87.66,73.4,67.79,11.43,1067.82,5.6,Yelahanka,13.106026,77.583847,7,16,True,2023-01-16,"Telugu, English, Kannada"
+D5280,Driver_475,4.39,25.7,Auto,"Hebbal, Yelahanka",Part-time Evening,79.73,66.99,49.3,4.49,835.88,5.5,HSR Layout,12.916944,77.648165,16,22,True,2021-07-23,"Telugu, Kannada"
+D4583,Driver_476,4.75,32.5,Premium Auto,Yelahanka,Weekday Only,87.03,72.15,62.89,2.76,878.61,4.8,Malleshwaram,13.00068,77.573299,8,15,True,2020-12-31,Kannada
+D2861,Driver_477,4.85,15.0,Auto,HSR Layout,Weekend Only,66.86,55.8,43.56,9.82,731.08,3.7,Bellandur,12.916924,77.676352,8,15,True,2022-06-07,"Hindi, Kannada"
+D1063,Driver_478,4.84,21.4,Auto,,Part-time Morning,90.46,80.78,73.1,9.46,693.16,3.7,Bannerghatta Road,12.88376,77.601341,7,12,True,2021-11-29,English
+D8318,Driver_479,4.15,24.3,Premium Auto,,Weekday Only,66.13,49.33,43.71,9.5,1038.56,6.0,Bannerghatta Road,12.89575,77.597541,9,17,True,2021-09-02,English
+D4955,Driver_480,4.57,7.6,Auto,,Part-time Evening,68.31,60.15,42.82,4.23,631.04,3.8,Marathahalli,12.947432,77.70997,16,21,True,2023-01-15,Hindi
+D7848,Driver_481,4.74,12.7,Auto,"Sarjapur Road, JP Nagar, Bannerghatta Road",Part-time Evening,87.35,67.6,64.05,22.93,529.44,3.1,Bannerghatta Road,12.902894,77.601214,15,19,True,2022-08-17,"Telugu, English, Hindi"
+D1479,Driver_482,4.54,12.3,Auto,Sarjapur Road,Full-time,76.17,66.1,64.05,31.76,965.41,5.6,Malleshwaram,12.994316,77.577158,8,16,True,2022-08-29,Tamil
+D7503,Driver_483,4.45,13.6,Auto,,Full-time,91.68,74.22,61.49,12.05,920.23,5.2,Jayanagar,12.928561,77.585693,9,20,True,2022-07-20,"Hindi, Tamil, Telugu"
+D3954,Driver_484,4.73,4.9,Premium Auto,"JP Nagar, Indiranagar, Electronic City",Weekday Only,90.53,78.58,68.78,11.25,1055.38,5.9,Malleshwaram,13.003826,77.569836,7,16,True,2023-04-06,"Kannada, Tamil, Telugu"
+D8882,Driver_485,4.96,47.2,Auto,"Electronic City, Jayanagar",Weekday Only,59.38,44.42,44.47,25.21,954.21,5.2,Banashankari,12.922516,77.548303,9,19,True,2019-10-15,English
+D9159,Driver_486,4.75,18.3,Auto,,Full-time,87.84,78.39,71.02,47.52,1298.08,6.8,Malleshwaram,12.998194,77.562264,8,16,True,2022-03-03,"Tamil, Kannada, English"
+D9661,Driver_487,4.48,4.0,Auto,Basavanagudi,Full-time,53.97,48.57,33.06,11.61,1090.04,6.0,Hebbal,13.032595,77.589115,8,19,False,2023-05-05,English
+D7711,Driver_488,4.49,43.6,Auto,Whitefield,Part-time Evening,92.5,77.17,65.74,1.76,638.1,3.6,Basavanagudi,12.945502,77.576917,16,20,True,2020-02-03,Hindi
+D9686,Driver_489,4.61,15.4,Premium Auto,"Bellandur, Jayanagar",Part-time Morning,64.65,48.45,49.08,6.09,686.2,3.6,MG Road,12.972813,77.605337,8,12,True,2022-05-28,"Kannada, Telugu"
+D5722,Driver_490,4.62,20.2,Auto,"MG Road, Marathahalli, Hebbal",Part-time Morning,80.0,63.87,50.82,12.44,832.93,5.4,Banashankari,12.924263,77.542398,8,13,True,2022-01-02,"Tamil, Hindi, Telugu"
+D1329,Driver_491,4.3,16.2,Auto,"Bellandur, Domlur",Full-time,64.36,48.85,42.1,5.97,1449.68,7.4,Bannerghatta Road,12.893824,77.600274,8,17,True,2022-05-02,Kannada
+D6301,Driver_492,4.65,7.3,Premium Auto,,Weekday Only,84.53,64.07,71.68,27.93,636.07,3.8,Bellandur,12.918674,77.658794,8,17,True,2023-01-25,Tamil
+D9294,Driver_493,4.41,9.9,Auto,"Marathahalli, Basavanagudi, Bellandur",Weekday Only,81.1,59.9,65.05,16.84,1152.66,6.9,JP Nagar,12.903415,77.587652,9,16,True,2022-11-09,Kannada
+D5574,Driver_494,4.52,14.8,Auto,"Whitefield, MG Road, Marathahalli",Weekend Only,61.69,43.96,40.84,6.25,875.13,4.6,Electronic City,12.833182,77.672826,9,17,True,2022-06-15,"Tamil, English, Hindi"
+D1774,Driver_495,4.62,20.5,Auto,"Bannerghatta Road, Rajajinagar, Koramangala",Weekday Only,89.94,72.14,75.21,9.35,674.13,4.3,JP Nagar,12.909648,77.572853,9,18,True,2021-12-25,"Hindi, Telugu"
+D2688,Driver_496,4.42,24.9,Auto,"Jayanagar, Bellandur",Part-time Evening,60.48,45.38,41.38,8.68,500.0,2.7,BTM Layout,12.914364,77.597521,17,23,True,2021-08-14,"Telugu, English, Tamil"
+D4679,Driver_497,5.0,16.4,Auto,,Weekend Only,78.87,61.88,56.05,7.18,1169.67,7.5,Indiranagar,12.973126,77.647713,8,14,True,2022-04-27,"English, Hindi"
+D6861,Driver_498,4.4,38.4,Premium Auto,Jayanagar,Full-time,80.42,65.55,56.24,7.62,1214.58,6.4,Banashankari,12.92331,77.555849,9,17,True,2020-07-05,"Tamil, English, Hindi"
+D2520,Driver_499,4.26,11.0,Auto,Basavanagudi,Part-time Morning,70.32,60.77,43.08,27.31,500.0,2.8,Marathahalli,12.944216,77.696197,8,12,True,2022-10-07,Telugu

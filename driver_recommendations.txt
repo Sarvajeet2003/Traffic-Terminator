@@ -1,0 +1,33 @@
+DRIVER RECOMMENDATIONS BASED ON PREDICTED DEMAND
+==============================================
+
+MORNING RUSH HOUR (7 AM - 10 AM)
+--------------------------------
+1. Marenahalli, Lat: 12.9182, Lng: 77.5932 - Expected rides: 5.8
+2. Shivajinagar, Lat: 12.9787, Lng: 77.6086 - Expected rides: 4.3
+3. Iblur, Lat: 12.9256, Lng: 77.6649 - Expected rides: 2.3
+4. Indiranagar, Lat: 12.9753, Lng: 77.6457 - Expected rides: 2.2
+5. Electronics City Phase 2 (West), Lat: 12.8399, Lng: 77.6770 - Expected rides: 1.8
+
+EVENING RUSH HOUR (4 PM - 8 PM)
+------------------------------
+1. Marenahalli, Lat: 12.9182, Lng: 77.5932 - Expected rides: 5.8
+2. Shivajinagar, Lat: 12.9787, Lng: 77.6086 - Expected rides: 4.3
+3. Indiranagar, Lat: 12.9753, Lng: 77.6457 - Expected rides: 2.5
+4. Electronics City Phase 2 (West), Lat: 12.8399, Lng: 77.6770 - Expected rides: 1.8
+
+WEEKEND HOTSPOTS
+---------------
+1. Marenahalli, Lat: 12.9182, Lng: 77.5932 - Expected rides: 5.8
+2. Shivajinagar, Lat: 12.9787, Lng: 77.6086 - Expected rides: 4.2
+3. Indiranagar, Lat: 12.9753, Lng: 77.6457 - Expected rides: 2.6
+4. Electronics City Phase 2 (West), Lat: 12.8399, Lng: 77.6770 - Expected rides: 1.8
+5. Iblur, Lat: 12.9256, Lng: 77.6649 - Expected rides: 0.4
+
+OVERALL TOP LOCATIONS
+--------------------
+1. Marenahalli, Lat: 12.9182, Lng: 77.5932 - Expected rides: 5.8
+2. Shivajinagar, Lat: 12.9787, Lng: 77.6086 - Expected rides: 4.2
+3. Indiranagar, Lat: 12.9753, Lng: 77.6457 - Expected rides: 2.6
+4. Electronics City Phase 2 (West), Lat: 12.8399, Lng: 77.6770 - Expected rides: 1.8
+5. Iblur, Lat: 12.9256, Lng: 77.6649 - Expected rides: 0.4

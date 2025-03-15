@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Yatri - Waiting Queue Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .header {
+            background-color: #FF5733;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border: none;
+        }
+        
+        .card-header {
+            background-color: #3366FF;
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: #3366FF;
+            border-color: #3366FF;
+        }
+        
+        .btn-primary:hover {
+            background-color: #254EDB;
+            border-color: #254EDB;
+        }
+        
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        
+        .metric-card {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FF5733;
+        }
+        
+        .metric-label {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        #map {
+            height: 400px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .status-waiting {
+            color: #ffc107;
+        }
+        
+        .status-matched {
+            color: #28a745;
+        }
+        
+        .status-completed {
+            color: #3366FF;
+        }
+        
+        .status-cancelled {
+            color: #dc3545;
+        }
+        
+        .status-expired {
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header text-center">
+        <h1><i class="fas fa-taxi"></i> Namma Yatri</h1>
+        <h3>Waiting Queue Dashboard</h3>
+    </div>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="metric-value" id="total-requests">0</div>
+                    <div class="metric-label">Total Requests</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="metric-value" id="waiting-requests">0</div>
+                    <div class="metric-label">Waiting</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="metric-value" id="avg-wait-time">0</div>
+                    <div class="metric-label">Avg. Wait Time (min)</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="metric-value" id="hotspots">0</div>
+                    <div class="metric-label">Active Hotspots</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-plus-circle"></i> Add to Queue
+                    </div>
+                    <div class="card-body">
+                        <form id="queue-form">
+                            <div class="mb-3">
+                                <label for="user-id" class="form-label">User ID</label>
+                                <input type="text" class="form-control" id="user-id" required>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="pickup-lat" class="form-label">Pickup Latitude</label>
+                                    <input type="number" step="0.000001" class="form-control" id="pickup-lat" required>
+                                </div>
+                                <div class="col">
+                                    <label for="pickup-lng" class="form-label">Pickup Longitude</label>
+                                    <input type="number" step="0.000001" class="form-control" id="pickup-lng" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="dest-lat" class="form-label">Destination Latitude</label>
+                                    <input type="number" step="0.000001" class="form-control" id="dest-lat" required>
+                                </div>
+                                <div class="col">
+                                    <label for="dest-lng" class="form-label">Destination Longitude</label>
+                                    <input type="number" step="0.000001" class="form-control" id="dest-lng" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="area-name" class="form-label">Area Name</label>
+                                <input type="text" class="form-control" id="area-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="scheduled-time" class="form-label">Scheduled Time (leave blank for immediate)</label>
+                                <input type="datetime-local" class="form-control" id="scheduled-time">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add to Queue</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <i class="fas fa-search"></i> Queue Status Lookup
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="lookup-type" class="form-label">Lookup By</label>
+                            <select class="form-select" id="lookup-type">
+                                <option value="request">Request ID</option>
+                                <option value="user">User ID</option>
+                                <option value="all">All Entries</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" id="id-input-container">
+                            <label for="lookup-id" class="form-label">ID</label>
+                            <input type="text" class="form-control" id="lookup-id">
+                        </div>
+                        <button id="lookup-btn" class="btn btn-primary">Lookup</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-map-marked-alt"></i> Queue Map
+                    </div>
+                    <div class="card-body">
+                        <div id="map"></div>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <i class="fas fa-list"></i> Queue Entries
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Request ID</th>
+                                        <th>User ID</th>
+                                        <th>Area</th>
+                                        <th>Wait Time</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="queue-table">
+                                    <!-- Queue entries will be populated here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line"></i> Queue Statistics
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <canvas id="status-chart"></canvas>
+                            </div>
+                            <div class="col-md-6">
+                                <canvas id="wait-time-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-cogs"></i> Queue Optimization
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="available-drivers" class="form-label">Available Drivers</label>
+                                <input type="number" class="form-control" id="available-drivers" value="10" min="0">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="optimize-btn" class="form-label">&nbsp;</label>
+                                <button id="optimize-btn" class="btn btn-primary form-control">Optimize Queue</button>
+                            </div>
+                        </div>
+                        <div id="optimization-results" class="mt-3">
+                            <!-- Optimization results will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for detailed view -->
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="detail-content">
+                    <!-- Details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <script>
+        // Sample data for demonstration (in a real implementation, this would come from the Python backend)
+        const sampleData = {
+            queue: [{
+                request_id: "12345-abcde",
+                user_id: "user123",
+                pickup_lat: 12.9716,
+                pickup_lng: 77.5946,
+                destination_lat: 12.9352,
+                destination_lng: 77.6245,
+                area_name: "Shivajinagar",
+                request_time: "2023-08-15T08:30:00",
+                scheduled_time: "2023-08-15T09:00:00",
+                estimated_wait_time: 12,
+                status: "waiting",
+                priority: 75.5
+            }, {
+                request_id: "67890-fghij",
+                user_id: "user456",
+                pickup_lat: 12.9352,
+                pickup_lng: 77.6245,
+                destination_lat: 12.9782,
+                destination_lng: 77.6408,
+                area_name: "Indiranagar",
+                request_time: "2023-08-15T08:35:00",
+                scheduled_time: "2023-08-15T08:45:00",
+                estimated_wait_time: 8,
+                status: "matched",
+                priority: 85.2,
+                driver_id: "driver789",
+                matched_time: "2023-08-15T08:40:00"
+            }, {
+                request_id: "24680-klmno",
+                user_id: "user789",
+                pickup_lat: 12.9782,
+                pickup_lng: 77.6408,
+                destination_lat: 12.9716,
+                destination_lng: 77.5946,
+                area_name: "Koramangala",
+                request_time: "2023-08-15T08:20:00",
+                scheduled_time: "2023-08-15T08:30:00",
+                estimated_wait_time: 15,
+                status: "completed",
+                priority: 90.1,
+                driver_id: "driver456",
+                matched_time: "2023-08-15T08:25:00"
+            }, {
+                request_id: "13579-pqrst",
+                user_id: "user101",
+                pickup_lat: 12.9975,
+                pickup_lng: 77.6112,
+                destination_lat: 12.9352,
+                destination_lng: 77.6245,
+                area_name: "HSR Layout",
+                request_time: "2023-08-15T08:10:00",
+                scheduled_time: "2023-08-15T08:20:00",
+                estimated_wait_time: 18,
+                status: "cancelled",
+                priority: 65.8
+            }],
+            statistics: {
+                total_requests: 4,
+                waiting_requests: 1,
+                matched_requests: 1,
+                completed_requests: 1,
+                cancelled_requests: 1,
+                expired_requests: 0,
+                avg_wait_time: 13.25,
+                avg_priority: 79.15,
+                busiest_locations: [
+                    ["12.972,77.595", 2],
+                    ["12.935,77.625", 1],
+                    ["12.998,77.611", 1]
+                ],
+                peak_hours: [
+                    [8, 4],
+                    [9, 0],
+                    [17, 0]
+                ]
+            },
+            optimization: {
+                recommendations: [
+                    "Driver surplus: Have 9 extra drivers available.",
+                    "Estimated time to clear queue: 1.5 minutes.",
+                    "Allocate 10 drivers to location 12.972,77.595 (2 requests).",
+                    "Current peak hours: 8:00-9:00 (4 requests)"
+                ],
+                driver_allocation: {
+                    "12.972,77.595": 10
+                },
+                estimated_clearance_time: 1.5
+            }
+        };
+
+        // Initialize the map
+        let map;
+        let markers = [];
+
+        function initMap() {
+            // Create map centered on Bengaluru
+            map = L.map('map').setView([12.9716, 77.5946], 12);
+
+            // Add tile layer (OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add markers for queue entries
+            updateMapMarkers();
+        }
+
+        function updateMapMarkers() {
+            // Clear existing markers
+            markers.forEach(marker => map.removeLayer(marker));
+            markers = [];
+
+            // Add markers for each queue entry
+            sampleData.queue.forEach(entry => {
+                const markerColor = getMarkerColor(entry.status);
+                const marker = L.circleMarker([entry.pickup_lat, entry.pickup_lng], {
+                    radius: 8,
+                    fillColor: markerColor,
+                    color: '#fff',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map);
+
+                // Add popup with info
+                marker.bindPopup(`
+                    <strong>Request ID:</strong> ${entry.request_id}<br>
+                    <strong>User ID:</strong> ${entry.user_id}<br>
+                    <strong>Area:</strong> ${entry.area_name || 'Unknown'}<br>
+                    <strong>Status:</strong> ${entry.status}<br>
+                    <strong>Wait Time:</strong> ${entry.estimated_wait_time} min<br>
+                    <strong>Priority:</strong> ${entry.priority.toFixed(1)}
+                `);
+
+                markers.push(marker);
+            });
+        }
+
+        function getMarkerColor(status) {
+            switch (status) {
+                case 'waiting':
+                    return '#ffc107';
+                case 'matched':
+                    return '#28a745';
+                case 'completed':
+                    return '#3366FF';
+                case 'cancelled':
+                    return '#dc3545';
+                case 'expired':
+                    return '#6c757d';
+                default:
+                    return '#6c757d';
+            }
+        }
+
+        function getStatusIcon(status) {
+            switch (status) {
+                case 'waiting':
+                    return '<i class="fas fa-clock status-waiting"></i>';
+                case 'matched':
+                    return '<i class="fas fa-handshake status-matched"></i>';
+                case 'completed':
+                    return '<i class="fas fa-check-circle status-completed"></i>';
+                case 'cancelled':
+                    return '<i class="fas fa-times-circle status-cancelled"></i>';
+                case 'expired':
+                    return '<i class="fas fa-hourglass-end status-expired"></i>';
+                default:
+                    return '<i class="fas fa-question-circle"></i>';
+            }
+        }
+
+        // Initialize charts
+        let statusChart;
+        let waitTimeChart;
+
+        function initCharts() {
+            // Status distribution chart
+            const statusCtx = document.getElementById('status-chart').getContext('2d');
+            statusChart = new Chart(statusCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Waiting', 'Matched', 'Completed', 'Cancelled', 'Expired'],
+                    datasets: [{
+                        data: [
+                            sampleData.statistics.waiting_requests,
+                            sampleData.statistics.matched_requests,
+                            sampleData.statistics.completed_requests,
+                            sampleData.statistics.cancelled_requests,
+                            sampleData.statistics.expired_requests
+                        ],
+                        backgroundColor: [
+                            '#ffc107',
+                            '#28a745',
+                            '#3366FF',
+                            '#dc3545',
+                            '#6c757d'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Request Status Distribution'
+                        }
+                    }
+                }
+            });
+
+            // Wait time distribution chart
+            const waitTimeCtx = document.getElementById('wait-time-chart').getContext('2d');
+
+            // Create wait time bins
+            const waitTimes = sampleData.queue.map(entry => entry.estimated_wait_time);
+            const waitTimeBins = [
+                waitTimes.filter(t => t <= 5).length,
+                waitTimes.filter(t => t > 5 && t <= 10).length,
+                waitTimes.filter(t => t > 10 && t <= 15).length,
+                waitTimes.filter(t => t > 15 && t <= 20).length,
+                waitTimes.filter(t => t > 20).length
+            ];
+
+            waitTimeChart = new Chart(waitTimeCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['0-5 min', '6-10 min', '11-15 min', '16-20 min', '20+ min'],
+                    datasets: [{
+                        label: 'Number of Requests',
+                        data: waitTimeBins,
+                        backgroundColor: '#3366FF'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Wait Time Distribution'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                precision: 0
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Update dashboard metrics
+        function updateMetrics() {
+            document.getElementById('total-requests').textContent = sampleData.statistics.total_requests;
+            document.getElementById('waiting-requests').textContent = sampleData.statistics.waiting_requests;
+            document.getElementById('avg-wait-time').textContent = sampleData.statistics.avg_wait_time.toFixed(1);
+            document.getElementById('hotspots').textContent = sampleData.statistics.busiest_locations.length;
+        }
+
+        // Update queue table
+        function updateQueueTable() {
+            const tableBody = document.getElementById('queue-table');
+            tableBody.innerHTML = '';
+
+            sampleData.queue.forEach(entry => {
+                        const row = document.createElement('tr');
+
+                        // Truncate request ID for display
+                        const shortRequestId = entry.request_id.substring(0, 8) + '...';
+
+                        row.innerHTML = `
+                    <td>${shortRequestId}</td>
+                    <td>${entry.user_id}</td>
+                    <td>${entry.area_name || 'Unknown'}</td>
+                    <td>${entry.estimated_wait_time} min</td>
+                    <td>${getStatusIcon(entry.status)} ${entry.status}</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary view-btn" data-id="${entry.request_id}">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        ${entry.status === 'waiting' ? `
+                            <button class="btn btn-sm btn-success match-btn" data-id="${entry.request_id}">
+                                <i class="fas fa-handshake"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger cancel-btn" data-id="${entry.request_id}">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        ` : ''}
+                    </td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+
+            // Add event listeners to buttons
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const requestId = this.getAttribute('data-id');
+                    showRequestDetails(requestId);
+                });
+            });
+
+            document.querySelectorAll('.match-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const requestId = this.getAttribute('data-id');
+                    matchRequest(requestId);
+                });
+            });
+
+            document.querySelectorAll('.cancel-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const requestId = this.getAttribute('data-id');
+                    cancelRequest(requestId);
+                });
+            });
+        }
+
+        // Show request details in modal
+        function showRequestDetails(requestId) {
+            const entry = sampleData.queue.find(e => e.request_id === requestId);
+            if (!entry) return;
+
+            const detailContent = document.getElementById('detail-content');
+            
+            // Format dates for display
+            const requestTime = new Date(entry.request_time).toLocaleString();
+            const scheduledTime = new Date(entry.scheduled_time).toLocaleString();
+            const matchedTime = entry.matched_time ? new Date(entry.matched_time).toLocaleString() : 'N/A';
+            
+            detailContent.innerHTML = `
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Request Information</h5>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Request ID</th>
+                                <td>${entry.request_id}</td>
+                            </tr>
+                            <tr>
+                                <th>User ID</th>
+                                <td>${entry.user_id}</td>
+                            </tr>
+                            <tr>
+                                <th>Status</th>
+                                <td>${getStatusIcon(entry.status)} ${entry.status}</td>
+                            </tr>
+                            <tr>
+                                <th>Priority</th>
+                                <td>${entry.priority.toFixed(1)}</td>
+                            </tr>
+                            <tr>
+                                <th>Request Time</th>
+                                <td>${requestTime}</td>
+                            </tr>
+                            <tr>
+                                <th>Scheduled Time</th>
+                                <td>${scheduledTime}</td>
+                            </tr>
+                            ${entry.driver_id ? `
+                            <tr>
+                                <th>Driver ID</th>
+                                <td>${entry.driver_id}</td>
+                            </tr>
+                            <tr>
+                                <th>Matched Time</th>
+                                <td>${matchedTime}</td>
+                            </tr>
+                            ` : ''}
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Location Information</h5>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Area Name</th>
+                                <td>${entry.area_name || 'Unknown'}</td>
+                            </tr>
+                            <tr>
+                                <th>Pickup Location</th>
+                                <td>${entry.pickup_lat}, ${entry.pickup_lng}</td>
+                            </tr>
+                            <tr>
+                                <th>Destination</th>
+                                <td>${entry.destination_lat}, ${entry.destination_lng}</td>
+                            </tr>
+                            <tr>
+                                <th>Estimated Wait Time</th>
+                                <td>${entry.estimated_wait_time} minutes</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div id="detail-map" style="height: 300px; width: 100%; border-radius: 10px;"></div>
+                    </div>
+                </div>
+            `;
+            
+            // Show the modal
+            const modal = new bootstrap.Modal(document.getElementById('detailModal'));
+            modal.show();
+            
+            // Initialize the detail map after the modal is shown
+            setTimeout(() => {
+                const detailMap = L.map('detail-map').setView([entry.pickup_lat, entry.pickup_lng], 13);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(detailMap);
+                
+                // Add pickup marker
+                const pickupMarker = L.marker([entry.pickup_lat, entry.pickup_lng], {
+                    icon: L.divIcon({
+                        className: 'custom-div-icon',
+                        html: `<div style="background-color: #3366FF; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white;"></div>`,
+                        iconSize: [12, 12],
+                        iconAnchor: [6, 6]
+                    })
+                }).addTo(detailMap);
+                pickupMarker.bindPopup('Pickup Location');
+                
+                // Add destination marker
+                const destMarker = L.marker([entry.destination_lat, entry.destination_lng], {
+                    icon: L.divIcon({
+                        className: 'custom-div-icon',
+                        html: `<div style="background-color: #FF5733; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white;"></div>`,
+                        iconSize: [12, 12],
+                        iconAnchor: [6, 6]
+                    })
+                }).addTo(detailMap);
+                destMarker.bindPopup('Destination');
+                
+                // Add a line connecting pickup and destination
+                const polyline = L.polyline([
+                    [entry.pickup_lat, entry.pickup_lng],
+                    [entry.destination_lat, entry.destination_lng]
+                ], {
+                    color: '#3366FF',
+                    weight: 3,
+                    opacity: 0.7,
+                    dashArray: '5, 10'
+                }).addTo(detailMap);
+                
+                // Fit bounds to show both markers
+                detailMap.fitBounds([
+                    [entry.pickup_lat, entry.pickup_lng],
+                    [entry.destination_lat, entry.destination_lng]
+                ], { padding: [50, 50] });
+            }, 300);
+        }
+
+        // Match request with driver
+        function matchRequest(requestId) {
+            // Find the request in the queue
+            for (let i = 0; i < sampleData.queue.length; i++) {
+                if (sampleData.queue[i].request_id === requestId) {
+                    // Update status to matched
+                    sampleData.queue[i].status = 'matched';
+                    // Add driver ID (in a real app, this would be selected from available drivers)
+                    sampleData.queue[i].driver_id = 'driver' + Math.floor(Math.random() * 1000);
+                    // Set matched time
+                    sampleData.queue[i].matched_time = new Date().toISOString();
+                    
+                    // Update statistics
+                    sampleData.statistics.waiting_requests--;
+                    sampleData.statistics.matched_requests++;
+                    
+                    // Update UI
+                    updateQueueTable();
+                    updateMapMarkers();
+                    updateMetrics();
+                    if (statusChart) {
+                        statusChart.data.datasets[0].data = [
+                            sampleData.statistics.waiting_requests,
+                            sampleData.statistics.matched_requests,
+                            sampleData.statistics.completed_requests,
+                            sampleData.statistics.cancelled_requests,
+                            sampleData.statistics.expired_requests
+                        ];
+                        statusChart.update();
+                    }
+                    
+                    // Show success message
+                    alert(`Request ${requestId} has been matched with driver ${sampleData.queue[i].driver_id}`);
+                    break;
+                }
+            }
+        }
+        
+        // Cancel request
+        function cancelRequest(requestId) {
+            // Find the request in the queue
+            for (let i = 0; i < sampleData.queue.length; i++) {
+                if (sampleData.queue[i].request_id === requestId) {
+                    // Update status to cancelled
+                    sampleData.queue[i].status = 'cancelled';
+                    
+                    // Update statistics
+                    sampleData.statistics.waiting_requests--;
+                    sampleData.statistics.cancelled_requests++;
+                    
+                    // Update UI
+                    updateQueueTable();
+                    updateMapMarkers();
+                    updateMetrics();
+                    if (statusChart) {
+                        statusChart.data.datasets[0].data = [
+                            sampleData.statistics.waiting_requests,
+                            sampleData.statistics.matched_requests,
+                            sampleData.statistics.completed_requests,
+                            sampleData.statistics.cancelled_requests,
+                            sampleData.statistics.expired_requests
+                        ];
+                        statusChart.update();
+                    }
+                    
+                    // Show success message
+                    alert(`Request ${requestId} has been cancelled`);
+                    break;
+                }
+            }
+        }
+        
+        // Handle form submission for adding to queue
+        document.getElementById('queue-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const userId = document.getElementById('user-id').value;
+            const pickupLat = parseFloat(document.getElementById('pickup-lat').value);
+            const pickupLng = parseFloat(document.getElementById('pickup-lng').value);
+            const destLat = parseFloat(document.getElementById('dest-lat').value);
+            const destLng = parseFloat(document.getElementById('dest-lng').value);
+            const areaName = document.getElementById('area-name').value;
+            const scheduledTimeInput = document.getElementById('scheduled-time').value;
+            
+            // Generate a random request ID
+            const requestId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+            
+            // Current time
+            const currentTime = new Date().toISOString();
+            
+            // Scheduled time (if provided)
+            let scheduledTime = currentTime;
+            if (scheduledTimeInput) {
+                scheduledTime = new Date(scheduledTimeInput).toISOString();
+            }
+            
+            // Calculate estimated wait time (in a real app, this would use the algorithm from waiting_queue.py)
+            const estimatedWaitTime = Math.floor(Math.random() * 15) + 5;
+            
+            // Calculate priority (in a real app, this would use the algorithm from waiting_queue.py)
+            const priority = Math.random() * 30 + 60;
+            
+            // Create new queue entry
+            const newEntry = {
+                request_id: requestId,
+                user_id: userId,
+                pickup_lat: pickupLat,
+                pickup_lng: pickupLng,
+                destination_lat: destLat,
+                destination_lng: destLng,
+                area_name: areaName,
+                request_time: currentTime,
+                scheduled_time: scheduledTime,
+                estimated_wait_time: estimatedWaitTime,
+                status: 'waiting',
+                priority: priority
+            };
+            
+            // Add to queue
+            sampleData.queue.push(newEntry);
+            
+            // Update statistics
+            sampleData.statistics.total_requests++;
+            sampleData.statistics.waiting_requests++;
+            
+            // Recalculate average wait time
+            const waitTimes = sampleData.queue.map(entry => entry.estimated_wait_time);
+            sampleData.statistics.avg_wait_time = waitTimes.reduce((a, b) => a + b, 0) / waitTimes.length;
+            
+            // Update UI
+            updateQueueTable();
+            updateMapMarkers();
+            updateMetrics();
+            if (statusChart) {
+                statusChart.data.datasets[0].data = [
+                    sampleData.statistics.waiting_requests,
+                    sampleData.statistics.matched_requests,
+                    sampleData.statistics.completed_requests,
+                    sampleData.statistics.cancelled_requests,
+                    sampleData.statistics.expired_requests
+                ];
+                statusChart.update();
+            }
+            
+            // Update wait time chart
+            if (waitTimeChart) {
+                const newWaitTimes = sampleData.queue.map(entry => entry.estimated_wait_time);
+                const newWaitTimeBins = [
+                    newWaitTimes.filter(t => t <= 5).length,
+                    newWaitTimes.filter(t => t > 5 && t <= 10).length,
+                    newWaitTimes.filter(t => t > 10 && t <= 15).length,
+                    newWaitTimes.filter(t => t > 15 && t <= 20).length,
+                    newWaitTimes.filter(t => t > 20).length
+                ];
+                waitTimeChart.data.datasets[0].data = newWaitTimeBins;
+                waitTimeChart.update();
+            }
+            
+            // Reset form
+            this.reset();
+            
+            // Show success message
+            alert(`Request added to queue with ID: ${requestId}`);
+        });
+        
+        // Handle lookup button click
+        document.getElementById('lookup-btn').addEventListener('click', function() {
+            const lookupType = document.getElementById('lookup-type').value;
+            const lookupId = document.getElementById('lookup-id').value;
+            
+            if (lookupType === 'all') {
+                // Show all entries (already displayed in the table)
+                return;
+            }
+            
+            if (!lookupId && lookupType !== 'all') {
+                alert('Please enter an ID to lookup');
+                return;
+            }
+            
+            if (lookupType === 'request') {
+                // Find request by ID
+                const entry = sampleData.queue.find(e => e.request_id === lookupId);
+                if (entry) {
+                    showRequestDetails(entry.request_id);
+                } else {
+                    alert('Request not found');
+                }
+            } else if (lookupType === 'user') {
+                // Find all requests for this user
+                const entries = sampleData.queue.filter(e => e.user_id === lookupId);
+                if (entries.length > 0) {
+                    // Filter table to show only these entries
+                    const tableBody = document.getElementById('queue-table');
+                    tableBody.innerHTML = '';
+                    
+                    entries.forEach(entry => {
+                        const row = document.createElement('tr');
+                        
+                        // Truncate request ID for display
+                        const shortRequestId = entry.request_id.substring(0, 8) + '...';
+                        
+                        row.innerHTML = `
+                            <td>${shortRequestId}</td>
+                            <td>${entry.user_id}</td>
+                            <td>${entry.area_name || 'Unknown'}</td>
+                            <td>${entry.estimated_wait_time} min</td>
+                            <td>${getStatusIcon(entry.status)} ${entry.status}</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary view-btn" data-id="${entry.request_id}">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                ${entry.status === 'waiting' ? `
+                                    <button class="btn btn-sm btn-success match-btn" data-id="${entry.request_id}">
+                                        <i class="fas fa-handshake"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger cancel-btn" data-id="${entry.request_id}">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                ` : ''}
+                            </td>
+                        `;
+                        
+                        tableBody.appendChild(row);
+                    });
+                    
+                    // Add event listeners to buttons
+                    document.querySelectorAll('.view-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const requestId = this.getAttribute('data-id');
+                            showRequestDetails(requestId);
+                        });
+                    });
+                    
+                    document.querySelectorAll('.match-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const requestId = this.getAttribute('data-id');
+                            matchRequest(requestId);
+                        });
+                    });
+                    
+                    document.querySelectorAll('.cancel-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const requestId = this.getAttribute('data-id');
+                            cancelRequest(requestId);
+                        });
+                    });
+                } else {
+                    alert('No requests found for this user');
+                }
+            }
+        });
+        
+        // Handle lookup type change
+        document.getElementById('lookup-type').addEventListener('change', function() {
+            const idInputContainer = document.getElementById('id-input-container');
+            if (this.value === 'all') {
+                idInputContainer.style.display = 'none';
+                // Reset table to show all entries
+                updateQueueTable();
+            } else {
+                idInputContainer.style.display = 'block';
+            }
+        });
+        
+        // Handle optimize button click
+        document.getElementById('optimize-btn').addEventListener('click', function() {
+            const availableDrivers = parseInt(document.getElementById('available-drivers').value);
+            
+            // In a real app, this would call the optimize_queue method from waiting_queue.py
+            // For demo purposes, we'll just update the optimization data
+            sampleData.optimization = {
+                recommendations: [
+                    `${availableDrivers > sampleData.statistics.waiting_requests ? 
+                        `Driver surplus: Have ${availableDrivers - sampleData.statistics.waiting_requests} extra drivers available.` : 
+                        `Driver shortage: Need ${sampleData.statistics.waiting_requests - availableDrivers} more drivers to clear the queue.`}`,
+                    `Estimated time to clear queue: ${(sampleData.statistics.waiting_requests / Math.max(1, availableDrivers) * 15).toFixed(1)} minutes.`,
+                    `Allocate ${Math.min(availableDrivers, sampleData.statistics.waiting_requests)} drivers to busiest locations.`,
+                    `Current peak hours: 8:00-9:00 (${sampleData.statistics.peak_hours[0][1]} requests)`
+                ],
+                driver_allocation: {},
+                estimated_clearance_time: (sampleData.statistics.waiting_requests / Math.max(1, availableDrivers) * 15)
+            };
+            
+            // Allocate drivers to busiest locations
+            let remainingDrivers = availableDrivers;
+            for (const [location, count] of sampleData.statistics.busiest_locations) {
+                if (remainingDrivers <= 0) break;
+                
+                const allocated = Math.min(remainingDrivers, count);
+                sampleData.optimization.driver_allocation[location] = allocated;
+                remainingDrivers -= allocated;
+            }
+            
+            // Display optimization results
+            const resultsContainer = document.getElementById('optimization-results');
+            resultsContainer.innerHTML = `
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Optimization Results</h5>
+                        <ul class="list-group mb-3">
+                            ${sampleData.optimization.recommendations.map(rec => 
+                                `<li class="list-group-item">${rec}</li>`
+                            ).join('')}
+                        </ul>
+                        
+                        <h6>Driver Allocation:</h6>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Drivers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${Object.entries(sampleData.optimization.driver_allocation).map(([loc, drivers]) => 
+                                    `<tr>
+                                        <td>${loc}</td>
+                                        <td>${drivers}</td>
+                                    </tr>`
+                                ).join('')}
+                            </tbody>
+                        </table>
+                        
+                        <div class="alert alert-info">
+                            Estimated time to clear queue: ${sampleData.optimization.estimated_clearance_time.toFixed(1)} minutes
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        // Initialize the dashboard
+        window.addEventListener('DOMContentLoaded', function() {
+            initMap();
+            initCharts();
+            updateMetrics();
+            updateQueueTable();
+            
+            // Set default values for the add to queue form (Bengaluru coordinates)
+            document.getElementById('pickup-lat').value = '12.9716';
+            document.getElementById('pickup-lng').value = '77.5946';
+            document.getElementById('dest-lat').value = '12.9352';
+            document.getElementById('dest-lng').value = '77.6245';
+        });
+    </script>
+</body>
+
+</html>

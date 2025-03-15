@@ -1,0 +1,208 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Bengaluru Ride Hotspot Prediction Dashboard</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .container { max-width: 1200px; margin: 0 auto; }
+            .header { text-align: center; margin-bottom: 30px; }
+            .section { margin-bottom: 40px; }
+            .flex-container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+            .chart { width: 48%; margin-bottom: 20px; }
+            .full-width { width: 100%; }
+            iframe { border: none; }
+            table { width: 100%; border-collapse: collapse; }
+            th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #f2f2f2; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Bengaluru Ride Hotspot Prediction Dashboard</h1>
+                <p>AI-driven analysis and prediction of ride demand hotspots</p>
+            </div>
+            
+            <div class="section">
+                <h2>Current Hotspot Map</h2>
+                <div class="full-width">
+                    <iframe src="../hotspot_areas.html" width="100%" height="500px"></iframe>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Peak Hour Heatmap</h2>
+                <div class="full-width">
+                    <iframe src="../peak_hour_heatmap.html" width="100%" height="500px"></iframe>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Hourly Ride Distribution</h2>
+                <div class="full-width">
+                    <img src="../hourly_ride_distribution.png" width="100%">
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Top Hotspot Areas</h2>
+                <table>
+                    <tr>
+                        <th>Cluster</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Ride Count</th>
+                        <th>Approximate Location</th>
+                    </tr>
+    
+                    <tr>
+                        <td>0</td>
+                        <td>12.918211</td>
+                        <td>77.593197</td>
+                        <td>5082</td>
+                        <td>Marenahalli</td>
+                    </tr>
+        
+                    <tr>
+                        <td>1</td>
+                        <td>12.925611</td>
+                        <td>77.664949</td>
+                        <td>808</td>
+                        <td>Iblur</td>
+                    </tr>
+        
+                    <tr>
+                        <td>2</td>
+                        <td>12.978651</td>
+                        <td>77.608596</td>
+                        <td>5691</td>
+                        <td>Shivajinagar</td>
+                    </tr>
+        
+                    <tr>
+                        <td>3</td>
+                        <td>12.975316</td>
+                        <td>77.645698</td>
+                        <td>2958</td>
+                        <td>Indiranagar</td>
+                    </tr>
+        
+                    <tr>
+                        <td>4</td>
+                        <td>12.839894</td>
+                        <td>77.676953</td>
+                        <td>2147</td>
+                        <td>Electronics City Phase 2 (West)</td>
+                    </tr>
+        
+                    <tr>
+                        <td>5</td>
+                        <td>12.935262</td>
+                        <td>77.624364</td>
+                        <td>787</td>
+                        <td>Koramangala</td>
+                    </tr>
+        
+                    <tr>
+                        <td>6</td>
+                        <td>12.967691</td>
+                        <td>77.748983</td>
+                        <td>3159</td>
+                        <td>Whitefield</td>
+                    </tr>
+        
+                    <tr>
+                        <td>7</td>
+                        <td>13.022239</td>
+                        <td>77.642818</td>
+                        <td>1549</td>
+                        <td>Banaswadi</td>
+                    </tr>
+        
+                    <tr>
+                        <td>8</td>
+                        <td>12.959002</td>
+                        <td>77.697445</td>
+                        <td>781</td>
+                        <td>Marathahalli</td>
+                    </tr>
+        
+                    <tr>
+                        <td>9</td>
+                        <td>13.003539</td>
+                        <td>77.570834</td>
+                        <td>799</td>
+                        <td>Malleswaram</td>
+                    </tr>
+        
+                </table>
+            </div>
+            
+            <div class="section">
+                <h2>Hotspot Predictions</h2>
+    
+                <div class="chart">
+                    <h3>Marenahalli - Historical Prediction</h3>
+                    <img src="../predictions_cluster_0.png" width="100%">
+                </div>
+                <div class="chart">
+                    <h3>Marenahalli - Future Prediction</h3>
+                    <img src="../future_predictions_cluster_0.png" width="100%">
+                </div>
+        
+                <div class="chart">
+                    <h3>Iblur - Historical Prediction</h3>
+                    <img src="../predictions_cluster_1.png" width="100%">
+                </div>
+                <div class="chart">
+                    <h3>Iblur - Future Prediction</h3>
+                    <img src="../future_predictions_cluster_1.png" width="100%">
+                </div>
+        
+                <div class="chart">
+                    <h3>Shivajinagar - Historical Prediction</h3>
+                    <img src="../predictions_cluster_2.png" width="100%">
+                </div>
+                <div class="chart">
+                    <h3>Shivajinagar - Future Prediction</h3>
+                    <img src="../future_predictions_cluster_2.png" width="100%">
+                </div>
+        
+                <div class="chart">
+                    <h3>Indiranagar - Historical Prediction</h3>
+                    <img src="../predictions_cluster_3.png" width="100%">
+                </div>
+                <div class="chart">
+                    <h3>Indiranagar - Future Prediction</h3>
+                    <img src="../future_predictions_cluster_3.png" width="100%">
+                </div>
+        
+                <div class="chart">
+                    <h3>Electronics City Phase 2 (West) - Historical Prediction</h3>
+                    <img src="../predictions_cluster_4.png" width="100%">
+                </div>
+                <div class="chart">
+                    <h3>Electronics City Phase 2 (West) - Future Prediction</h3>
+                    <img src="../future_predictions_cluster_4.png" width="100%">
+                </div>
+        
+            </div>
+            
+            <div class="section">
+                <h2>Recommendations for Drivers</h2>
+                <ul>
+                    <li>Morning peak hours (7-10 AM): Position yourself near residential areas and major tech parks</li>
+                    <li>Evening peak hours (4-8 PM): Focus on business districts and tech parks for return trips</li>
+                    <li>Weekends: Tourist spots and shopping areas show higher demand</li>
+                    <li>Check the prediction dashboard daily for the most up-to-date hotspot information</li>
+                </ul>
+            </div>
+            
+            <div class="footer">
+                <p>© 2023 Namma Yatri Hackathon - AI-Powered Ride Demand Prediction</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    

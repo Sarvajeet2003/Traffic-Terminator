@@ -341,7 +341,7 @@ def main():
         7. **WhatsApp Integration**: Seamless booking and ride management through WhatsApp
         """)
         # Add WhatsApp feature explanation and images
-        st.markdown("<h2 class='sub-header'>WhatsApp Integration</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 class='sub-header'>WhatsApp Integration(For Premium Users)</h2>", unsafe_allow_html=True)
         
         col1, col2 = st.columns(2)
         

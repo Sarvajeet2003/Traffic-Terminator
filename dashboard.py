@@ -402,7 +402,7 @@ def main():
                 Our dynamic pricing model uses **Q-Learning**, a model-free reinforcement learning algorithm that learns optimal pricing policies through trial and error.
                 
                 **Technical Implementation:**
-                - **State Space**: Demand level, supply level, time of day, day type, weather conditions
+                - **State Space**: Demand level, supply level, time of day, day type, weather conditions, Traffic Levels
                 - **Action Space**: 11 discrete price multipliers ranging from 1.0x to 2.0x
                 - **Reward Function**: Balances driver earnings with ride acceptance probability
                 - **Learning Process**: Updates Q-values based on observed rewards and transitions

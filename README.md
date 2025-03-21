@@ -18,7 +18,7 @@ This project presents an AI-driven solution for optimizing supply-demand balance
 ### Core AI Systems
 
 1. **Hotspot Prediction**
-   - Uses LSTM Neural Networks (87% accuracy)
+   - Uses LSTM Neural Networks 
    - Predicts high-demand areas by time of day
    - Trained on 6 months of historical ride data
    - Forecasts demand for the next 24 hours in 1-hour intervals
